@@ -46,7 +46,9 @@ class BlogsController < ApplicationController
   # DELETE /blogs/1.json
   def destroy
     @blog.destroy
-    format.html { redirect_to blogs_url, notice: 'Blog Was Successfully Destroyed.' }
+    respond_to do |format|
+      format.html { redirect_to blogs_url, notice: 'Blog Was Successfully Destroyed.' }
+    end
   end
 
   private
