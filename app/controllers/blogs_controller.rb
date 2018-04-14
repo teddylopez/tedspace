@@ -36,7 +36,7 @@ class BlogsController < ApplicationController
   # PATCH/PUT /blogs/1.json
   def update
     if @blog.update(blog_params)
-      format.html { redirect_to @blog, notice: 'Your Blog Is Now Updated.' }
+      format.html { redirect_to @blog, notice: 'Your Blog Was Updated.' }
     else
       format.html { render :edit }
     end
@@ -46,7 +46,7 @@ class BlogsController < ApplicationController
   # DELETE /blogs/1.json
   def destroy
     @blog.destroy
-    format.html { redirect_to blogs_url, notice: 'Blog was successfully destroyed.' }
+    format.html { redirect_to blogs_url, notice: 'Blog Was Successfully Destroyed.' }
   end
 
   private
