@@ -4,7 +4,7 @@ class Portfolio < ApplicationRecord
   after_initialize :set_defaults
   has_many :technologies
   accepts_nested_attributes_for :technologies,
-                                reject_if: lambda { |attrs| attr['name'].blank? }
+                                reject_if: lambda { |attrs| attrs['name'].blank? }
 
   def self.react
     where(subtitle: "React js")
