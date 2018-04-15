@@ -20,15 +20,9 @@
       <%= link_to "Login", new_user_session_path %>
     <% end %>
 
-    <%= yield %>
+    <%= render "shared/nav", location: 'top' %>
 
-    <div>
-      <div><%= link_to "Home", root_path %></div>
-      <div><%= link_to "About Ted", about_ted_path %></div>
-      <div><%= link_to "Contact", contact_path %></div>
-      <div><%= link_to "Blog", blogs_path %></div>
-      <div><%= link_to "Portfolio", portfolios_path %></div>
-    </div>
+    <%= yield %>
 
     <% if session[:source] %>
       <p>Thanks for visiting from <%= session[:source] %></p>
