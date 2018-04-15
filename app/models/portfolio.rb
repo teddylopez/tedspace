@@ -2,6 +2,7 @@ class Portfolio < ApplicationRecord
   include Placeholder
   validates_presence_of :title, :body, :main_image, :thumb_image
   after_initialize :set_defaults
+  has_many :technologies
 
   def self.react
     where(subtitle: "React js")
