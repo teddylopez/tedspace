@@ -2,6 +2,6 @@
 
 <%= link_to "New Item", new_portfolio_path %>
 
-<%= render partial: 'portfolio_item', collection: @portfolio_items %>
+<%= render partial: 'portfolio_item', collection: @portfolio_items, spacer_template: 'portfolio_ruler' %>
 <br>
 <%= link_to 'New Portfolio Item', new_portfolio_path %>
