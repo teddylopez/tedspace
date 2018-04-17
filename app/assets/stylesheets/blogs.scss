@@ -30,16 +30,6 @@ h6, .h6 {
   color: #333;
 }
 
-
-/*
- * Override Bootstrap's default container.
- */
-
-.container {
-  max-width: 60rem;
-}
-
-
 /*
  * Masthead for nav
  */
@@ -89,7 +79,7 @@ h6, .h6 {
 
 .blog-header {
   padding-bottom: 1.25rem;
-  margin-bottom: 2rem;
+  margin: 0 auto 2rem auto;
   border-bottom: .05rem solid #eee;
 }
 .blog-title {
@@ -169,4 +159,32 @@ h6, .h6 {
 }
 .blog-footer p:last-child {
   margin-bottom: 0;
+}
+
+/* Ted Styles */
+
+.ted-container {
+  margin: 0 20%;
+}
+
+.blog-wrapper {
+  margin: 0 20%;
+  display: flex;
+  .blog-col-1 {
+    flex: 3;
+  }
+  .blog-col-2 {
+    flex: 1;
+    padding-left: 3rem;
+  }
+}
+
+@media(max-width:767px){
+  .blog-wrapper {
+    flex-direction: column;
+    margin: 0 2rem;
+  }
+  .ted-container {
+    margin: 0 2rem;
+  }
 }
