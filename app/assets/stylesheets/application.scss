@@ -165,7 +165,11 @@ body {
 
 .card-block {
   text-align: left;
-  .contact_flex-container {
+  .contact_flex-container, .login_flex-container {
     display: flex;
+    align-content: space-between;
+  }
+  .login_flex-div {
+    flex: 1;
   }
 }
