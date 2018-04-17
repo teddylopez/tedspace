@@ -160,3 +160,12 @@ body {
     width: 65rem;
   }
 }
+
+/* Contact Page Styles */
+
+.card-block {
+  text-align: left;
+  .contact_flex-container {
+    display: flex;
+  }
+}
