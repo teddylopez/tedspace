@@ -34,8 +34,16 @@ body {
 }
 body {
   color: #fff;
+  font-family: 'Raleway', sans-serif;
   text-align: center;
   text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);
+}
+
+ul {
+  padding: 0;
+}
+li {
+  display: inline-block;
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
@@ -112,6 +120,11 @@ body {
 
 .cover {
   padding: 0 1.5rem;
+  h1 {
+    text-transform: uppercase;
+    font-size: 5rem;
+    margin-bottom: 4rem;
+  }
 }
 .cover .btn-lg {
   padding: .75rem 1.25rem;
@@ -156,9 +169,8 @@ body {
 
 @media (min-width: 62em) {
   .masthead,
-  .mastfoot,
-  .cover-container {
-    width: 65rem;
+  .mastfoot {
+    width: 100%;
   }
 }
 
@@ -184,4 +196,92 @@ body {
 .app-nav span {
   margin-left: 15px;
   margin-right: 15px;
+}
+
+.main {
+  h3, h4, h6 {
+    text-transform: uppercase;
+  }
+}
+
+.lax-wrap {
+  max-width: 100%;
+  margin: 0 auto;
+  font-size: 24px;
+  padding: 25px;
+}
+
+.lax-1 {
+  background: url("https://source.unsplash.com/ol8jGSMf3yE/1500x1500") no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 500px;
+}
+
+.lax-2 {
+  background: url("https://source.unsplash.com/T-tOgjWZ0fQ/1500x1500") no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 500px;
+}
+
+.lax-3 {
+  background: url("https://source.unsplash.com/WNZoVFUXE9E/1500x1500") no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 500px;
+}
+
+.lax-4 {
+  background: url("https://source.unsplash.com/zepnJQycr4U/1500x1500") no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 500px;
+}
+
+.about-me {
+  text-align: left;
+	margin: 20% 0;
+	padding-left: 5%;
+  .mailto {
+    color: #c8102e
+  }
+  h1 {
+    font-size: 55px;
+  }
+  a {
+    text-decoration: none;
+    color: #424652;
+  }
+}
+
+.skills {
+  p {
+    text-align: left;
+  }
+}
+
+.experience, .education, .interests {
+  h1 {
+    text-align: center;
+  }
+  p {
+    text-align: left;
+  }
+}
+
+.education {
+  text-align: left;
+}
+
+.section {
+  margin: 10% 0;
+}
+
+.icons {
+  color: #c8102e;
+  margin-top: 2rem;
+  i {
+    font-size: 4rem;
+  }
 }
