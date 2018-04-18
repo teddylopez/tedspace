@@ -46,6 +46,15 @@ li {
   display: inline-block;
 }
 
+form {
+  text-align: left;
+  margin: 5% auto;
+  input {
+    margin-bottom: 2rem;
+    height: 3rem;
+  }
+}
+
 /* Extra markup and styles for table-esque vertical and horizontal centering */
 .site-wrapper {
   display: table;
@@ -88,6 +97,7 @@ li {
   color: rgba(255,255,255,.5);
   background-color: transparent;
   border-bottom: .25rem solid transparent;
+  text-decoration: none;
 }
 
 .nav-masthead .nav-link:hover,
@@ -188,7 +198,7 @@ li {
 }
 
 .login > .card {
-  width: 50%;
+  width: 30%;
   margin: 0 auto;
   float: none;
 }
@@ -202,6 +212,32 @@ li {
   h3, h4, h6 {
     text-transform: uppercase;
   }
+}
+
+
+.contact-wrap h1 {
+  margin-top: 10%;
+}
+
+.contact-flex-wrap {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 10%;
+  .form-control {
+    width: 75%;
+  }
+  .contact-flex-item {
+    flex: 1;
+    margin-top: 10%;
+  }
+}
+
+.flex-home {
+  display: flex;
+}
+
+.home-flex-item {
+  flex: 1;
 }
 
 .lax-wrap {
@@ -290,5 +326,35 @@ li {
   margin-top: 2rem;
   i {
     font-size: 4rem;
+  }
+}
+
+.map {
+  margin-top: 5rem;
+  margin-bottom: 25rem;
+}
+
+@media(max-width:767px){
+  .masthead-brand {
+    padding-left: 2rem;
+    text-align: left;
+  }
+  .about-icons {
+    text-align: center;
+  }
+  .desc {
+    margin: 0;
+  }
+  .contact-flex-wrap {
+    flex-direction: column;
+    .contact-flex-item {
+      .form-control {
+        width: 100%;
+      }
+      iframe {
+        height: 100%;
+        width: 100%;
+      }
+    }
   }
 }

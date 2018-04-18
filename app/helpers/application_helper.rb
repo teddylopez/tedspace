@@ -27,7 +27,7 @@ module ApplicationHelper
         title: 'About Me'
       },
       {
-        url: contact_path,
+        url: new_contact_path,
         title: 'Contact'
       },
       {
