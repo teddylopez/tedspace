@@ -23,6 +23,8 @@ gem 'petergate', '~> 1.8', '>= 1.8.1'
 gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.4'
 gem 'kaminari', '~> 1.1', '>= 1.1.1'
 gem 'mail_form', '~> 1.7', '>= 1.7.1'
+gem 'jquery-rails', '~> 4.3', '>= 4.3.3'
+gem 'jquery-ui-rails', '~> 6.0', '>= 6.0.1'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
