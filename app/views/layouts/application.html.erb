@@ -17,14 +17,7 @@
       <div class="site-wrapper-inner">
         <div class="cover-container">
 
-          <%= video_tag(
-              'Waves.mp4',
-              id: 'background',
-              autoplay: true,
-              loop: true,
-              muted: false,
-            )
-            %>
+          <%= render "shared/application_video" %>
 
           <%= render "shared/application_nav" %>
 

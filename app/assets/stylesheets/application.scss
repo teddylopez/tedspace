@@ -30,6 +30,7 @@ a:hover {
 html,
 body {
   height: 100%;
+  position: relative;
 }
 body {
   color: #fff;
@@ -56,6 +57,7 @@ form {
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
 .site-wrapper {
+  background-color: #333;
   display: table;
   width: 100%;
   height: 100%; /* For at least Firefox */
@@ -84,6 +86,7 @@ form {
 
 .masthead {
   margin-bottom: 2rem;
+  z-index: 1000;
 }
 
 .masthead-brand {
@@ -138,6 +141,15 @@ form {
 .cover .btn-lg {
   padding: .75rem 1.25rem;
   font-weight: bold;
+}
+
+.cover-heading {
+  background: rgba(0,0,0,0);
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 
@@ -334,6 +346,9 @@ form {
 }
 
 @media(max-width:767px){
+  .masthead {
+    z-index: 10000;
+  }
   .masthead-brand {
     padding-left: 2rem;
     text-align: left;
@@ -358,17 +373,7 @@ form {
   }
 }
 
-#background {
+.video {
+  top: 0;
   position: fixed;
-  top: 50%;
-  left: 50%;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  z-index: -100;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
-  background-color: #333;
-  background-size: cover;
 }
