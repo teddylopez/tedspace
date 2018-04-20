@@ -86,10 +86,10 @@ form {
 
 .masthead {
   margin-bottom: 2rem;
-  background: #333333;
+  margin-left: 5rem;
+  margin-right: 5rem;
   height: 7rem;
-  -webkit-box-shadow: inset 0 0 5rem rgba(0, 0, 0, 0.5);
-  box-shadow: inset 0 0 5rem rgba(0, 0, 0, 0.2);
+  z-index: 1000;
 }
 
 .masthead-brand {
@@ -350,9 +350,6 @@ form {
 }
 
 @media(max-width:767px){
-  .masthead {
-    z-index: 10000;
-  }
   .masthead-brand {
     padding-left: 2rem;
     text-align: left;
