@@ -30,7 +30,7 @@ a:hover {
 html,
 body {
   height: 100%;
-  background-color: #333;
+  position: relative;
 }
 body {
   color: #fff;
@@ -57,6 +57,7 @@ form {
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
 .site-wrapper {
+  background-color: #333;
   display: table;
   width: 100%;
   height: 100%; /* For at least Firefox */
@@ -144,6 +145,15 @@ form {
 .cover .btn-lg {
   padding: .75rem 1.25rem;
   font-weight: bold;
+}
+
+.cover-heading {
+  background: rgba(0,0,0,0);
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 
@@ -267,14 +277,14 @@ form {
 }
 
 .lax-3 {
-  background: url("https://source.unsplash.com/WNZoVFUXE9E/1500x1500") no-repeat center;
+  background: url("https://source.unsplash.com/zepnJQycr4U/1500x1500") no-repeat center;
   background-size: cover;
   background-attachment: fixed;
   height: 500px;
 }
 
 .lax-4 {
-  background: url("https://source.unsplash.com/zepnJQycr4U/1500x1500") no-repeat center;
+  background: url("https://source.unsplash.com/WNZoVFUXE9E/1500x1500") no-repeat center;
   background-size: cover;
   background-attachment: fixed;
   height: 500px;
@@ -340,6 +350,9 @@ form {
 }
 
 @media(max-width:767px){
+  .masthead {
+    z-index: 10000;
+  }
   .masthead-brand {
     padding-left: 2rem;
     text-align: left;
@@ -362,4 +375,9 @@ form {
       }
     }
   }
+}
+
+.video {
+  top: 0;
+  position: fixed;
 }
