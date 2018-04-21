@@ -1,1 +1,16 @@
-<%= @tweets.inspect %>
+<div class="flex-home">
+  <div class="inner cover home-flex-item">
+    <h1>Twitter</h1>
+    <div class="row">
+      <% @tweets.each do |tweet| %>
+        <div class="col-md-6">
+          <div class="tweet">
+            <div class="card">
+              <%= tweet %>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
