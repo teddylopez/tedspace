@@ -12,6 +12,10 @@ a:hover {
   color: #fff;
 }
 
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+color: #fff;
+}
+
 /* Custom default button */
 .btn-secondary,
 .btn-secondary:hover,
@@ -21,11 +25,6 @@ a:hover {
   background-color: #fff;
   border: .05rem solid #fff;
 }
-
-
-/*
- * Base structure
- */
 
 html,
 body {
@@ -42,9 +41,6 @@ body {
 ul {
   padding: 0;
 }
-li {
-  display: inline-block;
-}
 
 form {
   text-align: left;
@@ -57,6 +53,7 @@ form {
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
 .site-wrapper {
+  position: fixed;
   background-color: #333;
   display: table;
   width: 100%;
@@ -79,26 +76,62 @@ form {
   padding: 2rem;
 }
 
+#menu-icon {
+  float: right;
+  margin-top: 1rem;
+  margin-right: 10rem;
+  font-size: 3rem;
+}
 
-/*
- * Header
- */
+nav {
+  .nav-menu {
+    margin-right: 10rem;
+    overflow: hidden;
+    height: 0;
+    li {
+      text-align: right;
+    }
+  }
+}
+
+.nav-link {
+  float: right;
+}
+
+nav ul.open {
+  height: auto;
+  margin-top: 5rem;
+}
+
+nav ul li a {
+  padding: 10px;
+  display: block;
+}
+
+header {
+  z-index: 1000;
+}
 
 .masthead {
+  position: relative;
   margin-bottom: 2rem;
   margin-left: 5rem;
   margin-right: 5rem;
   height: 7rem;
-  z-index: 1000;
+  width: 100%;
 }
 
 .masthead-brand {
+  float: left;
   margin-bottom: 0;
   color: #fff;
+  a {
+    text-decoration: none;
+  }
 }
 
 .nav-masthead .nav-link {
-  padding: .25rem 0;
+  padding: .25rem 1rem;
   font-weight: bold;
   color: rgba(255,255,255,.5);
   background-color: transparent;
@@ -119,20 +152,6 @@ form {
   color: #fff;
   border-bottom-color: #fff;
 }
-
-@media (min-width: 48em) {
-  .masthead-brand {
-    float: left;
-  }
-  .nav-masthead {
-    float: right;
-  }
-}
-
-
-/*
- * Cover
- */
 
 .cover {
   padding: 0 1.5rem;
@@ -156,50 +175,9 @@ form {
   justify-content: center;
 }
 
-
-/*
- * Footer
- */
-
 .mastfoot {
   color: rgba(255,255,255,.5);
 }
-
-
-/*
- * Affix and center
- */
-
-@media (min-width: 40em) {
-  /* Pull out the header and footer */
-  .masthead {
-    position: fixed;
-    top: 0;
-  }
-  .mastfoot {
-    position: fixed;
-    bottom: 0;
-  }
-  /* Start the vertical centering */
-  .site-wrapper-inner {
-    vertical-align: middle;
-  }
-  /* Handle the widths */
-  .masthead,
-  .mastfoot,
-  .cover-container {
-    width: 100%; /* Must be percentage or pixels for horizontal alignment */
-  }
-}
-
-@media (min-width: 62em) {
-  .masthead,
-  .mastfoot {
-    width: 100%;
-  }
-}
-
-/* Contact Page Styles */
 
 .card-block {
   text-align: left;
@@ -228,7 +206,6 @@ form {
     text-transform: uppercase;
   }
 }
-
 
 .contact-wrap h1 {
   margin-top: 10%;
@@ -260,6 +237,9 @@ form {
   margin: 0 auto;
   font-size: 24px;
   padding: 25px;
+  li {
+    display: inline-block;
+  }
 }
 
 .lax-1 {
@@ -350,9 +330,15 @@ form {
 }
 
 @media(max-width:767px){
+  .site-wrapper {
+    position: fixed;
+  }
+  #menu-icon {
+    margin: 2rem 10rem;
+    font-size: 2rem;
+  }
   .masthead-brand {
-    padding-left: 2rem;
-    text-align: left;
+    float: left;
   }
   .about-icons {
     text-align: center;
