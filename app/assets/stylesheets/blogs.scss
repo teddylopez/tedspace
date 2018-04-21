@@ -20,6 +20,10 @@ body {
   color: #424652;
 }
 
+textarea {
+  resize: vertical;
+}
+
 a {
   text-decoration: none!important;
   color: #424652;
@@ -40,6 +44,13 @@ h6, .h6 {
   color: #424652;
 }
 
+.btn-primary {
+  background-color: #424652;
+}
+
+.btn-primary:hover {
+  background-color: #4285F4;
+}
 /*
  * Masthead for nav
  */

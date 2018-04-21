@@ -10,6 +10,10 @@ body {
   min-height: 75rem; /* Can be removed; just added for demo purposes */
 }
 
+textarea {
+  resize: vertical;
+}
+
 .navbar {
   margin-bottom: 0;
 }

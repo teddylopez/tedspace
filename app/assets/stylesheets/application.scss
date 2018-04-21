@@ -38,6 +38,10 @@ body {
   text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);
 }
 
+textarea {
+  resize: vertical;
+}
+
 ul {
   padding: 0;
 }
@@ -190,6 +194,10 @@ header {
   }
 }
 
+.card {
+  margin: 10rem 20%;
+}
+
 .login > .card {
   width: 30%;
   margin: 0 auto;
@@ -211,13 +219,14 @@ header {
   margin-top: 10%;
 }
 
+.form-control {
+  width: 90%;
+}
+
 .contact-flex-wrap {
   display: flex;
   justify-content: space-around;
   margin: 0 10%;
-  .form-control {
-    width: 75%;
-  }
   .contact-flex-item {
     flex: 1;
     margin-top: 10%;
@@ -350,14 +359,12 @@ header {
   }
   .contact-flex-wrap {
     flex-direction: column;
-    .contact-flex-item {
-      .form-control {
-        width: 100%;
-      }
-      iframe {
-        width: 100%;
-      }
+    iframe {
+      width: 100%;
     }
+  }
+  .login_flex-container {
+    flex-direction: column;
   }
 }
 

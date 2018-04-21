@@ -12,16 +12,14 @@
   <% end %>
 
   <div class="form-group">
-    <%= form.label :title %>
-    <%= form.text_field :title, id: :blog_title, class: "form-control" %>
+    <%= form.text_field :title, placeholder: "Title", class: "form-control" %>
   </div>
 
   <div class="form-group">
-    <%= form.label :body %>
-    <%= form.text_area :body, id: :blog_body, class: "form-control", rows: 15 %>
+    <%= form.text_area :body, placeholder: "Body", class: "form-control", rows: "15" %>
   </div>
 
   <div class="form-group">
-    <%= form.submit "Submit", class: "btn btn-primary" %>
+    <%= submit_tag "Save", class: 'btn btn-primary' %>
   </div>
 <% end %>
