@@ -18,4 +18,5 @@
 //= require cocoon
 //= require gritter
 //= require bootstrap-sprockets
+//= require cable
 //= require_tree .
