@@ -8,7 +8,7 @@ Rails.application.routes.draw do
 
   get 'about-ted', to: 'pages#about'
   get 'contact', to: 'pages#contact'
-  get 'twitter', to: 'pages#twitter'
+  get 'noise', to: 'pages#noise'
 
   resources :blogs do
     member do

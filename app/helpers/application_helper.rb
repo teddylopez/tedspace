@@ -16,27 +16,6 @@ module ApplicationHelper
     end
   end
 
-  def nav_items
-    [
-      {
-        url: about_ted_path,
-        title: 'About Me'
-      },
-      {
-        url: new_contact_path,
-        title: 'Contact'
-      },
-      {
-        url: blogs_path,
-        title: 'Blog'
-      },
-      {
-        url: portfolios_path,
-        title: 'Portfolio'
-      },
-    ]
-  end
-
   def nav_helper style, tag_type
     nav_links = ''
     nav_items.each do |item|

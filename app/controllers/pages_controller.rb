@@ -8,7 +8,7 @@ class PagesController < ApplicationController
   def contact
   end
 
-  def twitter
+  def noise
     @tweets = SocialTool.twitter_search
   end
 end
