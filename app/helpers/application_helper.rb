@@ -48,4 +48,8 @@ module ApplicationHelper
   def active? path
     "active" if current_page? path
   end
+
+  def video_randomizer
+    movie = ['Stars.mov', 'Waves.mp4', 'Lightning.mp4'].sample
+  end
 end

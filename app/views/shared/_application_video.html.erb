@@ -1,12 +1,5 @@
 <% if current_page?(root_url) %>
 <div class="video">
-  <%= video_tag(
-      'Lightning.mp4',
-      id: 'background',
-      autoplay: true,
-      loop: true,
-      muted: false,
-    )
-  %>
+  <video id="background" autoplay="autoplay" loop="loop" src="assets/<%= video_randomizer %>"></video>
 </div>
 <% end %>
