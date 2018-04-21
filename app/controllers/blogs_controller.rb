@@ -30,10 +30,12 @@ class BlogsController < ApplicationController
   # POST /blogs.json
   def create
     @blog = Blog.new(blog_params)
-    if @blog.save
-      format.html { redirect_to @blog, notice: 'Your Blog Is Now Live.' }
-    else
-      format.html { render :new }
+    respond_to do |format|
+      if @blog.save
+        format.html { redirect_to @blog, notice: 'Your Blog Is Now Live.' }
+      else
+        format.html { render :new }
+      end
     end
   end
 

@@ -52,4 +52,16 @@ module ApplicationHelper
   def video_randomizer
     movie = ['Stars.mov', 'Waves.mp4', 'Lightning.mp4'].sample
   end
+
+  def alerts
+    alert = (flash[:alert] || flash[:error] || flash[:notice])
+
+    if alert
+      alert_generator alert
+    end
+  end
+
+  def alert_generator msg
+    js add_gritter(msg, :title => "tedlopez", sticky: false, time: 2000)
+  end
 end
