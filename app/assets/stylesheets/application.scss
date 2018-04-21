@@ -53,7 +53,7 @@ form {
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
 .site-wrapper {
-  position: fixed;
+  overflow: hidden;
   background-color: #333;
   display: table;
   width: 100%;
@@ -330,9 +330,6 @@ header {
 }
 
 @media(max-width:767px){
-  .site-wrapper {
-    position: fixed;
-  }
   #menu-icon {
     margin: 2rem 10rem;
     font-size: 2rem;
