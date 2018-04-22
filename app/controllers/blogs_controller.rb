@@ -50,10 +50,12 @@ class BlogsController < ApplicationController
   # PATCH/PUT /blogs/1
   # PATCH/PUT /blogs/1.json
   def update
-    if @blog.update(blog_params)
-      format.html { redirect_to @blog, notice: 'Your Blog Was Updated.' }
-    else
-      format.html { render :edit }
+    respond_to do |format|
+      if @blog.update(blog_params)
+        format.html { redirect_to @blog, notice: 'Blog Updated.' }
+      else
+        format.html { render :edit }
+      end
     end
   end
 
@@ -62,7 +64,7 @@ class BlogsController < ApplicationController
   def destroy
     @blog.destroy
     respond_to do |format|
-      format.html { redirect_to blogs_url, notice: 'Blog Was Successfully Destroyed.' }
+      format.html { redirect_to blogs_url, notice: 'Blog Destroyed.' }
     end
   end
 
@@ -83,6 +85,6 @@ class BlogsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def blog_params
-      params.require(:blog).permit(:title, :body)
+      params.require(:blog).permit(:title, :body, :topic_id)
     end
 end
