@@ -17,6 +17,6 @@
 //= require html.sortable
 //= require cocoon
 //= require gritter
-//= require bootstrap-sprockets
 //= require cable
+//= require bootstrap-sprockets
 //= require_tree .

@@ -2,7 +2,7 @@
 # All this logic will automatically be available in application.js.
 # You can use CoffeeScript in this file: http://coffeescript.org/
 
-jQuery(document).on 'turbolinks:load', ->
+$(document).on 'ready page:load', ->
   comments = $('#comments')
   if comments.length > 0
     App.global_chat = App.cable.subscriptions.create {
@@ -19,7 +19,7 @@ jQuery(document).on 'turbolinks:load', ->
     $this = $(this)
     textarea = $this.find('#comment_content')
     if $.trim(textarea.val()).length > 1
-      App.global_chat.send_comment textarea.val,
+      App.global_chat.send_comment textarea.val(),
       comments.data('blog-id')
       textarea.val('')
     e.preventDefault()
