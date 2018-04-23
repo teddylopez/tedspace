@@ -293,6 +293,42 @@ header {
   padding-right: 1rem;
 }
 
+.blogcrumb {
+  font-size: 1rem;
+  a {
+    margin: 0 .75rem;
+  }
+}
+
+.social-links li {
+  font-size: 2.5em;
+}
+
+.comment-card > .card {
+  margin-top: 15px;
+}
+
+.comment-attribution {
+  font-size: .8em;
+  font-style: italic;
+}
+
+.comment-name {
+  font-weight: 700;
+}
+
+.col-md-1 img, .col-md-2 img {
+  border-radius: 4px;
+}
+
+.col-md-2 {
+  width: 12%;
+}
+
+.col-md-10 {
+  padding-top: 5px;
+}
+
 @media(max-width:767px){
 
   #menu-icon {
@@ -344,12 +380,5 @@ header {
 
   .nav-login {
     padding-bottom: 4rem;
-  }
-}
-
-.blogcrumb {
-  font-size: 1rem;
-  a {
-    margin: 0 .75rem;
   }
 }
