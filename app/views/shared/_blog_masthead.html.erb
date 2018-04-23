@@ -1,8 +1,14 @@
-<!-- start of blog header -->
 <div class="blog-header">
   <div class="ted-container">
-    <h1 class="blog-post-title">My Blog</h1>
+    <h1 class="blog-post-title">Ted Talks</h1>
     <p class="lead blog-description">An example blog template built with Bootstrap.</p>
+    <span>
+      <%= link_to "Topics", topics_path %>
+    </span>
+    <br>
+    <br>
+    <span>
+      <%= link_to "New Blog", new_blog_path if logged_in?(:site_admin) %>
+    </span>
   </div>
 </div>
-<!-- end of blog header -->

@@ -6,10 +6,6 @@
 @import "font-awesome";
 @import "gritter";
 
-/*
- * Globals
- */
-
 @media (min-width: 48em) {
   html {
     font-size: 18px;
@@ -23,6 +19,14 @@ body {
 
 textarea {
   resize: vertical;
+}
+
+.nav-link li a {
+  color: red;
+}
+
+.social-links a {
+  color: #424652;
 }
 
 a {
@@ -63,6 +67,13 @@ h6, .h6 {
           box-shadow: inset 0 -.1rem .25rem rgba(0,0,0,.1);
 }
 
+#menu-icon {
+  margin-right: 2rem;
+  float: right;
+  margin-top: .5rem;
+  font-size: 1.7rem;
+}
+
 /* Nav links */
 .nav-link {
   position: relative;
@@ -94,6 +105,76 @@ h6, .h6 {
   border-left: .3rem solid transparent;
 }
 
+nav {
+  .nav-menu {
+    margin-right: 3rem;
+    overflow: hidden;
+    height: 0;
+    li {
+      list-style: none;
+      text-align: right;
+    }
+  }
+}
+
+.nav-link {
+  float: right;
+}
+
+nav ul.open {
+  height: auto;
+  margin-top: 3rem;
+}
+
+nav ul li a {
+  padding: 10px;
+  display: block;
+}
+
+header {
+  z-index: 1000;
+}
+
+.masthead {
+  position: relative;
+  margin-bottom: 2rem;
+  height: 7rem;
+  width: 100%;
+}
+
+.masthead-brand {
+  margin-left: 2rem;
+  float: left;
+  margin-bottom: 0;
+  color: #fff;
+  a {
+    text-decoration: none;
+  }
+}
+
+.nav-masthead .nav-link {
+  padding: .25rem 1rem;
+  font-weight: bold;
+  color: white;
+  background-color: transparent;
+  border-bottom: .1rem solid transparent;
+  text-decoration: none;
+}
+
+.nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:focus {
+  border-bottom-color: #337ab7;
+}
+
+.nav-masthead .nav-link + .nav-link {
+  margin-left: 1rem;
+}
+
+.nav-masthead .active {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
 
 /*
  * Blog name and description
@@ -102,7 +183,6 @@ h6, .h6 {
 .blog-header {
   padding-bottom: 1.25rem;
   margin: 0 auto 2rem auto;
-  border-bottom: .05rem solid #eee;
 }
 .blog-title {
   margin-bottom: 0;
@@ -187,11 +267,11 @@ h6, .h6 {
 /* Ted Styles */
 
 .ted-container {
-  margin: 0 20%;
+  margin: 0 10%;
 }
 
 .blog-wrapper {
-  margin: 0 20%;
+  margin: 0 10%;
   display: flex;
   .blog-col-1 {
     flex: 3;
@@ -214,6 +294,11 @@ h6, .h6 {
 }
 
 @media(max-width:767px){
+
+  #menu-icon {
+    margin-top: 1.7rem;
+    font-size: 2.2rem;
+  }
   .blog-wrapper {
     flex-direction: column;
     margin: 0 2rem;
@@ -223,9 +308,44 @@ h6, .h6 {
   }
   .ted-container {
     padding: 0;
-    margin: 0 2rem;
+    margin-left: 2rem;
   }
   .social-links i {
     font-size: 4rem;
+  }
+
+  nav .nav-menu {
+    margin: 0;
+  }
+
+  .nav-menu.open {
+    margin-top: 6rem;
+    padding: 0;
+  }
+
+  li a {
+    color: white;
+    margin-right: 3rem;
+  }
+
+  .nav-item {
+    padding-bottom: 5rem;
+  }
+
+  nav ul li {
+    background: #333333;
+    opacity: .8;
+    padding-bottom: 2rem;
+  }
+
+  .nav-login {
+    padding-bottom: 4rem;
+  }
+}
+
+.blogcrumb {
+  font-size: 1rem;
+  a {
+    margin: 0 .75rem;
   }
 }
