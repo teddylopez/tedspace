@@ -196,28 +196,27 @@ header {
   color: rgba(255,255,255,.5);
 }
 
-.card-block {
-  text-align: left;
-  .contact_flex-container, .login_flex-container {
-    .form-control {
-      width: 90%;
-    }
-    display: flex;
-    align-content: space-between;
-  }
-  .login_flex-div {
-    flex: 1;
-  }
+.new-session {
+  width: 25%;
+  margin: 10% auto;
+}
+
+.new-reg {
+  width: 40%;
+  margin: 10% auto;
+}
+
+.login-card {
+  margin-top: 10%;
+}
+
+.pw-reset {
+  width: 40%;
+  margin: 10% auto;
 }
 
 .card {
   margin: 10rem 20%;
-}
-
-.login > .card {
-  width: 30%;
-  margin: 0 auto;
-  float: none;
 }
 
 .app-nav span {
@@ -409,6 +408,10 @@ header {
   #menu-icon {
     margin: 1rem 2rem;
     font-size: 2rem;
+  }
+
+  .new-reg, .new-session {
+    width: 80%;
   }
 
   nav ul {
