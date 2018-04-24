@@ -29,7 +29,9 @@ module ApplicationHelper
   end
 
   def video_randomizer
-    movie = ['Stars.mov', 'Waves.mp4', 'Lightning.mp4'].sample
+    movie = ['https://s3.amazonaws.com/tedspace/videos/Waves.mp4',
+      'https://s3.amazonaws.com/tedspace/videos/Lightning.mp4',
+      'https://s3.amazonaws.com/tedspace/videos/Stars.mov'].sample
   end
 
   def alerts
