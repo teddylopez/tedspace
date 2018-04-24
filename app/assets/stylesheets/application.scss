@@ -424,6 +424,12 @@ header {
     display: none;
   }*/
 
+  .lax-1 {
+    background: url("canyon.jpeg") no-repeat center;
+    background-attachment: fixed;
+    height: 500px;
+  }
+
   #gritter-notice-wrapper {
     position: fixed;
     vertical-align: middle;
