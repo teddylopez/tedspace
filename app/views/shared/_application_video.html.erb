@@ -1,5 +1,10 @@
 <% if current_page?(root_url) %>
-<div class="video">
-  <video id="background" muted="muted" autoplay="autoplay" loop="loop" src="<%= video_randomizer %>"></video>
+<div class="video-responsive">
+  <video class="video" id="background" muted="muted" autoplay="autoplay" loop="loop">
+    <source src="<%= video_randomizer %>">
+  </video>
 </div>
+
+<canvas class="canvas"></canvas>
+
 <% end %>
