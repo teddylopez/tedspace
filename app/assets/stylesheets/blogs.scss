@@ -194,6 +194,23 @@ header {
   color: #999;
 }
 
+.topic-btn {
+  background-color: #424652;
+  color: white;
+  border-radius: 3px;
+  padding: .5rem 1rem;
+  margin-right: 1rem;
+}
+
+.topic-btn:hover {
+  background-color: #4285F4;
+  color: white;
+}
+
+.topics {
+  display: inline-block;
+}
+
 @media (min-width: 40em) {
   .blog-title {
     font-size: 3.5rem;

@@ -2,10 +2,11 @@
 ready = ->
   Typed.new '.element',
     strings: [
-      'NOISE',
+      'NEWS',
       'NOISE'
     ]
     typeSpeed: 200
+    loop: true
   return
 
 $(document).on 'ready page:load', ready
