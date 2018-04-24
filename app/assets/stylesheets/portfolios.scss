@@ -173,7 +173,7 @@ footer p {
 
 .portfolio-desc {
   width: 75%;
-  margin: 5rem auto;
+  margin: 2rem auto;
 }
 
 @media(max-width:767px){
@@ -217,6 +217,11 @@ footer p {
   }
 
   nav ul.open {
+    width: 100%;
+  }
+
+  .portfolio-desc {
+    margin: 1rem auto;
     width: 100%;
   }
 }
