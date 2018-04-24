@@ -426,7 +426,8 @@ header {
 
   .lax-1 {
     background: url("canyon.jpeg") no-repeat center;
-    background-size: auto;
+    background-size: cover;
+    background-position: center 0;
     background-attachment: fixed;
     height: 500px;
   }
