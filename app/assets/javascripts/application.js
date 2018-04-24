@@ -13,6 +13,8 @@
 //= require rails-ujs
 //= require jquery
 //= require jquery-ui
+//= require canvas-video-player
+//= require canvas-video-implementation
 //= require cocoon
 //= require gritter
 //= require lib/typed

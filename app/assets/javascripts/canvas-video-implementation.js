@@ -1,5 +1,4 @@
 $(document).ready(function(){
-
   var isIOS = /iPad|iPhone|iPod/.test(navigator.platform);
 
   if (isIOS) {
@@ -18,5 +17,5 @@ $(document).ready(function(){
 
       // Use HTML5 video
       document.querySelectorAll('.canvas')[0].style.display = 'none';
-
+}
 });
