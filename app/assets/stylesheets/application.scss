@@ -278,28 +278,28 @@ header {
 }
 
 .lax-1 {
-  background: url("https://source.unsplash.com/ol8jGSMf3yE/1500x1500") no-repeat center;
+  background: url("canyon.jpeg") no-repeat center;
   background-size: cover;
   background-attachment: fixed;
   height: 500px;
 }
 
 .lax-2 {
-  background: url("https://source.unsplash.com/T-tOgjWZ0fQ/1500x1500") no-repeat center;
+  background: url("islands.jpeg") no-repeat center;
   background-size: cover;
   background-attachment: fixed;
   height: 500px;
 }
 
 .lax-3 {
-  background: url("https://source.unsplash.com/zepnJQycr4U/1500x1500") no-repeat center;
+  background: url("yosemite.jpeg") no-repeat center;
   background-size: cover;
   background-attachment: fixed;
   height: 500px;
 }
 
 .lax-4 {
-  background: url("https://source.unsplash.com/WNZoVFUXE9E/1500x1500") no-repeat center;
+  background: url("milkyway.jpeg") no-repeat center;
   background-size: cover;
   background-attachment: fixed;
   height: 500px;
@@ -397,6 +397,10 @@ header {
 }
 
 @media(max-width:767px){
+
+  .video {
+    display: none;
+  }
 
   #gritter-notice-wrapper {
     position: fixed;
