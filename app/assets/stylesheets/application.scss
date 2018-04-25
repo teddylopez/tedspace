@@ -489,35 +489,11 @@ header {
     display: none;
   }
 
-  .lax-1 {
-    background: url("canyon.jpeg") no-repeat center;
-    background-size: cover;
-    background-position: center 0;
-    background-attachment: scroll;
-    height: 250px;
+  .lax-1, .lax-2, .lax-3, .lax-4 {
+    display: none;
   }
 
-  .lax-2 {
-    background: url("islands.jpeg") no-repeat center;
-    background-size: cover;
-    background-position: center 0;
-    background-attachment: scroll;
-    height: 250px;
-  }
-
-  .lax-3 {
-    background: url("yosemite.jpeg") no-repeat center;
-    background-size: cover;
-    background-position: center 0;
-    background-attachment: scroll;
-    height: 250px;
-  }
-
-  .lax-4 {
-    background: url("milkyway.jpeg") no-repeat center;
-    background-size: cover;
-    background-position: center 0;
-    background-attachment: scroll;
-    height: 250px;
+  .section {
+    margin-bottom: 15rem;
   }
 }
