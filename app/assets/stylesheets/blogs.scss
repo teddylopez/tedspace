@@ -304,6 +304,9 @@ header {
 .blog-flex {
   flex-direction: column;
   flex: 3;
+  p {
+    font-size: 18px;
+  }
 }
 
 .blog-flex a {
