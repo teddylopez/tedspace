@@ -91,10 +91,10 @@ Rails.application.configure do
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
 
-  config.action_cable.allowed_request_origins = ['https://tedspace.herokuapp.com', 'http://tedspace.herokuapp.com']
-  config.action_cable.url = "wss://tedspace.herokuapp.com/cable"
+  config.action_cable.allowed_request_origins = ['http://www.tedlopez.us', 'http://tedlopez.us']
+  config.action_cable.url = "wss://tedlopez.us/cable"
 
-  config.action_mailer.default_url_options = { host: 'https://murmuring-inlet-31523.herokuapp.com'}
+  config.action_mailer.default_url_options = { host: 'http://tedlopez.us'}
   config.action_mailer.delivery_method = :smtp
 
   ActionMailer::Base.smtp_settings = {
