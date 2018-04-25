@@ -506,38 +506,6 @@ header {
     width: 100%;
     margin-bottom: 10rem;
   }
-
-  .lax-1 {
-    background: url("canyon.jpeg") no-repeat center;
-    background-size: cover;
-    background-position: center 0;
-    background-attachment: scroll;
-    height: 250px;
-  }
-
-  .lax-2 {
-    background: url("islands.jpeg") no-repeat center;
-    background-size: cover;
-    background-position: center 0;
-    background-attachment: scroll;
-    height: 250px;
-  }
-
-  .lax-3 {
-    background: url("yosemite.jpeg") no-repeat center;
-    background-size: cover;
-    background-position: center 0;
-    background-attachment: scroll;
-    height: 250px;
-  }
-
-  .lax-4 {
-    background: url("milkyway.jpeg") no-repeat center;
-    background-size: cover;
-    background-position: center 0;
-    background-attachment: scroll;
-    height: 250px;
-  }
 }
 
 @media(max-width:400px){
@@ -548,7 +516,6 @@ header {
   .lax-1 {
     background: url("canyon.jpeg") no-repeat center;
     background-size: cover;
-    background-position: center 0;
     background-attachment: scroll;
     height: 250px;
   }
@@ -556,7 +523,6 @@ header {
   .lax-2 {
     background: url("islands.jpeg") no-repeat center;
     background-size: cover;
-    background-position: center 0;
     background-attachment: scroll;
     height: 250px;
   }
@@ -564,7 +530,6 @@ header {
   .lax-3 {
     background: url("yosemite.jpeg") no-repeat center;
     background-size: cover;
-    background-position: center 0;
     background-attachment: scroll;
     height: 250px;
   }
@@ -572,7 +537,6 @@ header {
   .lax-4 {
     background: url("milkyway.jpeg") no-repeat center;
     background-size: cover;
-    background-position: center 0;
     background-attachment: scroll;
     height: 250px;
   }
