@@ -396,65 +396,38 @@ header {
   margin: 0 auto;
 }
 
-.typed-cursor{
-    opacity: 1;
-    -webkit-animation: blink 0.7s infinite;
-    -moz-animation: blink 0.7s infinite;
-    animation: blink 0.7s infinite;
-}
-@keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-}
-@-webkit-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-}
-@-moz-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
+.typed-cursor {
+  opacity: 1;
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite;
 }
 
-@media(max-width:767px){
+@keyframes blink {
+  0% { opacity:1; }
+  50% { opacity:0; }
+  100% { opacity:1; }
+}
+@-webkit-keyframes blink {
+  0% { opacity:1; }
+  50% { opacity:0; }
+  100% { opacity:1; }
+}
+@-moz-keyframes blink {
+  0% { opacity:1; }
+  50% { opacity:0; }
+  100% { opacity:1; }
+}
 
-  /*.video {
-    display: none;
-  }*/
-
-  .lax-1 {
-    background: url("canyon.jpeg") no-repeat center;
-    background-size: cover;
-    background-position: center 0;
-    background-attachment: scroll;
-    height: 250px;
+.home-flex-item {
+  .typed {
+    .typed-cursor {
+      display: none;
+    }
   }
+}
 
-  .lax-2 {
-    background: url("islands.jpeg") no-repeat center;
-    background-size: cover;
-    background-position: center 0;
-    background-attachment: scroll;
-    height: 250px;
-  }
-
-  .lax-3 {
-    background: url("yosemite.jpeg") no-repeat center;
-    background-size: cover;
-    background-position: center 0;
-    background-attachment: scroll;
-    height: 250px;
-  }
-
-  .lax-4 {
-    background: url("milkyway.jpeg") no-repeat center;
-    background-size: cover;
-    background-position: center 0;
-    background-attachment: scroll;
-    height: 250px;
-  }
+@media(max-width:767px) {
 
   #gritter-notice-wrapper {
     position: fixed;
@@ -515,5 +488,43 @@ header {
   .twitter-wrapper {
     width: 100%;
     margin-bottom: 10rem;
+  }
+}
+
+@media(max-width:400px){
+  .video {
+    display: none;
+  }
+
+  .lax-1 {
+    background: url("canyon.jpeg") no-repeat center;
+    background-size: cover;
+    background-position: center 0;
+    background-attachment: scroll;
+    height: 250px;
+  }
+
+  .lax-2 {
+    background: url("islands.jpeg") no-repeat center;
+    background-size: cover;
+    background-position: center 0;
+    background-attachment: scroll;
+    height: 250px;
+  }
+
+  .lax-3 {
+    background: url("yosemite.jpeg") no-repeat center;
+    background-size: cover;
+    background-position: center 0;
+    background-attachment: scroll;
+    height: 250px;
+  }
+
+  .lax-4 {
+    background: url("milkyway.jpeg") no-repeat center;
+    background-size: cover;
+    background-position: center 0;
+    background-attachment: scroll;
+    height: 250px;
   }
 }
