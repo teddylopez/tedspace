@@ -419,14 +419,6 @@ header {
   100% { opacity:1; }
 }
 
-.home-flex-item {
-  .typed {
-    .typed-cursor {
-      display: none;
-    }
-  }
-}
-
 @media(max-width:767px) {
 
   #gritter-notice-wrapper {
@@ -492,6 +484,7 @@ header {
 }
 
 @media(max-width:400px){
+
   .video {
     display: none;
   }
