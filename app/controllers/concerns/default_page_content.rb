@@ -6,7 +6,7 @@ module DefaultPageContent
   end
 
   def set_page_defaults
-    @page_title = "tedspace"
+    @page_title = "tedlopez"
     @seo_keywords = "Ted Lopez portfolio"
   end
 end
