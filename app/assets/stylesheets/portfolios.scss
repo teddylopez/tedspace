@@ -141,9 +141,10 @@ header {
 }
 
 .card {
-  width: 60%;
+  float: left;
+  width: 33.333%;
   padding: .75rem;
-  margin: 2rem auto;
+  margin-bottom: 2rem;
   border: 0;
 }
 
