@@ -1,12 +1,11 @@
-<h1>About Ted</h1>
-
-<hr>
-
-<div class="row">
-  <div class="col-md-4">
-    <%= image_tag "ted.jpg", width: 300, alt: "profile image" %>
-  </div>
-
-  <div class="col-md-8">
-    <p>Short bio about Ted</p>
-  </div>
+<div class="lax-wrap main">
+  <%= render "about/about_me" %>
+  <div class="lax-1"></div>
+  <%= render "about/skills" %>
+  <div class="lax-2"></div>
+  <%= render "about/experience" %>
+  <div class="lax-3"></div>
+  <%= render "about/education" %>
+  <div class="lax-4"></div>
+  <%= render "about/interests" %>
+</div>

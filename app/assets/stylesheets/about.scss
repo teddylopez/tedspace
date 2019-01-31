@@ -1,0 +1,95 @@
+.lax-wrap {
+  max-width: 100%;
+  margin: 0 auto;
+  font-size: 24px;
+  padding: 25px;
+  li {
+    display: inline-block;
+  }
+}
+
+.lax-1 {
+  background: url("canyon.jpeg") no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 500px;
+}
+
+.lax-2 {
+  background: url("islands.jpeg") no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 500px;
+}
+
+.lax-3 {
+  background: url("yosemite.jpeg") no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 500px;
+}
+
+.lax-4 {
+  background: url("milkyway.jpeg") no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 500px;
+}
+
+.desc {
+  margin: 0 15%;
+}
+
+.align, .subhead {
+  text-align: left;
+}
+
+.about-me {
+  text-align: left;
+	padding-left: 5%;
+  padding-top: 15%;
+  padding-bottom: 22%;
+  .mailto {
+    color: #c8102e
+  }
+  h1 {
+    font-size: 55px;
+  }
+  a {
+    text-decoration: none;
+    color: #424652;
+  }
+}
+
+.skills {
+  margin-top: 10%;
+  margin-bottom: 10%;
+  p {
+    text-align: left;
+  }
+}
+
+.experience, .education, .interests {
+
+  h1 {
+    text-align: center;
+  }
+  p {
+    text-align: left;
+  }
+}
+
+.education {
+  text-align: left;
+}
+
+.interests {
+  margin-bottom: 8rem;
+}
+
+.icons {
+  margin-top: 2rem;
+  i {
+    font-size: 4rem;
+  }
+}
