@@ -52,4 +52,8 @@ module ApplicationHelper
   def active? path
     "active" if current_page? path
   end
+
+  def copyright_generator
+    LopezViewTool::Renderer.copyright 'Ted López', 'All rights reserved'
+  end
 end
