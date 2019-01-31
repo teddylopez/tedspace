@@ -1,18 +1,13 @@
 <%= form_for(@portfolio_item) do |form| %>
+
+  <% if @portfolio_item.errors.any? %>
+    <% @portfolio_item.errors.full_messages.each do |error| %>
+      <%= alert_generator error %>
+    <% end %>
+  <% end %>
+
   <div class="row">
     <div class="col-md-6">
-      <% if @portfolio_item.errors.any? %>
-        <div id="error_explanation">
-          <h2><%= pluralize(@portfolio_item.errors.count, "error") %> prohibited this item from being saved:</h2>
-
-          <ul>
-          <% @portfolio_item.errors.full_messages.each do |message| %>
-            <li><%= message %></li>
-          <% end %>
-          </ul>
-        </div>
-      <% end %>
-
       <div class="form-group">
         <%= form.label :title %>
         <%= form.text_field :title, class: "form-control" %>

@@ -14,6 +14,7 @@
 //= require rails-ujs
 //= require jquery-ui
 //= require cocoon
+//= require gritter
 //= require bootstrap-sprockets
 //= require turbolinks
 //= require_tree .
