@@ -8,7 +8,7 @@ module SocialTool
     end
 
     client.search("#trump", result_type: 'recent').take(20).collect do |tweet|
-      "@#{tweet.user.screen_name}: #{tweet.text}"
+      "#{tweet.user.screen_name}: #{tweet.text}"
     end
   end
 end

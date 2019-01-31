@@ -1,0 +1,18 @@
+<div class="flex-home">
+  <div class="inner cover home-flex-item">
+    <h1>
+      <span class="element"></span>
+    </h1>
+    <div class="twitter-wrapper">
+      <div class="tweet-flex">
+        <% @tweets.each do |tweet| %>
+          <div class="tweet">
+            <div class="tweet-card">
+              @<%= tweet_parser tweet %>
+            </div>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

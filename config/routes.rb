@@ -4,11 +4,12 @@ Rails.application.routes.draw do
   resources :portfolios, except: [:show] do
     put :sort, on: :collection
   end
-  
+
   get 'portfolio/:id', to: 'portfolios#show', as: 'portfolio_show'
 
   get 'about-ted', to: 'pages#about'
   get 'contact', to: 'pages#contact'
+  get 'noise', to: 'pages#noise'
 
   resources :blogs do
     member do
