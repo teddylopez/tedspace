@@ -17,19 +17,64 @@
 }
 
 body {
-  font-family: Georgia, "Times New Roman", Times, serif;
-  color: #555;
-}
+  background-color: #333;
+  font-family: 'Raleway', sans-serif;
 
-h1, .h1,
-h2, .h2,
-h3, .h3,
-h4, .h4,
-h5, .h5,
-h6, .h6 {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: normal;
-  color: #333;
+  p, h1, h2, h3, h4, h5, h6 {
+    color: white;
+  }
+
+  a {
+    color: white;
+  }
+
+  a:hover {
+    color: rgba(233, 30, 99, 0.7);
+  }
+
+  .blog-header {
+    color: white;
+    border: none;
+  }
+
+  .blog-post-title {
+    a {
+      color: white;
+      text-decoration: none;
+    }
+  }
+
+  .social-links li {
+    font-size: 2rem;
+    a {
+      color: white;
+    }
+  }
+
+  .blog-footer {
+    padding: 2.5rem 0;
+    color: #999;
+    text-align: center;
+    background-color: #333;
+  }
+
+  .blog-footer p:last-child {
+    margin-bottom: 0;
+  }
+
+  .pagination a {
+    padding: .1em .3em;
+    margin: .2em;
+    border: 1px solid #aad;
+    text-decoration: none;
+    color: white;
+  }
+
+  .pagination a:hover {
+    border-color: rgba(233, 30, 99, 0.7);
+    color: rgba(233, 30, 99, 0.7);
+  }
+
 }
 
 /*
@@ -74,11 +119,6 @@ h6, .h6 {
   border-left: .3rem solid transparent;
 }
 
-
-/*
- * Blog name and description
- */
-
 .blog-header {
   padding-bottom: 1.25rem;
   margin: 0 auto 2rem auto;
@@ -112,7 +152,7 @@ h6, .h6 {
 }
 .sidebar-module-inset {
   padding: 1rem;
-  background-color: #f5f5f5;
+  background-color: #999;
   border-radius: .25rem;
 }
 .sidebar-module-inset p:last-child,
@@ -147,21 +187,6 @@ h6, .h6 {
   color: #999;
 }
 
-
-/*
- * Footer
- */
-
-.blog-footer {
-  padding: 2.5rem 0;
-  color: #999;
-  text-align: center;
-  background-color: #f9f9f9;
-  border-top: .05rem solid #e5e5e5;
-}
-.blog-footer p:last-child {
-  margin-bottom: 0;
-}
 
 /* Ted Styles */
 
@@ -198,8 +223,4 @@ h6, .h6 {
     padding: 0;
     margin: 0 2rem;
   }
-}
-
-.social-links li {
-  font-size: 2rem;
 }
