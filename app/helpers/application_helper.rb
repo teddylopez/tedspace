@@ -27,6 +27,10 @@ module ApplicationHelper
         title: 'About Me'
       },
       {
+        url: noise_path,
+        title: 'News'
+      },
+      {
         url: contact_path,
         title: 'Contact'
       },
