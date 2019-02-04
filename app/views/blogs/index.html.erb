@@ -1,6 +1,11 @@
-<div class="blog-col-1">
-  <%= paginate @blogs %>
-  <%= render @blogs %>
-  <%= paginate @blogs %>
-  <%= link_to 'New Blog', new_blog_path if logged_in?(:site_admin) %>
+
+<div class="blog-wrapper">
+  <%= render 'shared/blog_masthead' %>
+  <div class="blog-col-1">
+    <%= paginate @blogs %>
+    <%= link_to 'New Blog', new_blog_path if logged_in?(:site_admin) %>
+    <%= render @blogs %>
+    <%= paginate @blogs %>
+  </div>
+    <%= render 'shared/blog_sidebar' %>
 </div>

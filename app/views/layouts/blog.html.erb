@@ -10,21 +10,23 @@
     <META name="keywords" content="<%= @seo_keywords %>" />
     <%= stylesheet_link_tag    'blogs', media: 'all', 'data-turbolinks-track': 'reload' %>
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-    <%= render 'shared/blog_nav' %>
-    <%= render 'shared/blog_masthead' %>
+    <div class="site-wrapper">
+      <div class="site-wrapper-inner">
+        <%= render 'shared/application_nav' %>
+        <%= render 'shared/blog_masthead' %>
 
-    <div class="blog-wrapper">
-      <%= yield %>
-      <%= render 'shared/blog_sidebar' %>
-      <% source_helper("blog") %>
+          <%= yield %>
+          <%= render 'shared/blog_sidebar' %>
+      </div>
     </div>
-
     <%= render 'shared/blog_footer' %>
+
+
     <%= alerts %>
 
   </body>
 </html>
+<% source_helper("blog") %>

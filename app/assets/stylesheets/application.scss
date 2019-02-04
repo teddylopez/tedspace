@@ -5,32 +5,6 @@
 @import "about";
 @import "noise";
 
-/*
- * Globals
- */
-
-/* Links */
-a,
-a:focus,
-a:hover {
-  color: #fff;
-}
-
-/* Custom default button */
-.btn-secondary,
-.btn-secondary:hover,
-.btn-secondary:focus {
-  color: #333;
-  text-shadow: none; /* Prevent inheritance from `body` */
-  background-color: #fff;
-  border: .05rem solid #fff;
-}
-
-
-/*
- * Base structure
- */
-
 html,
 body {
   height: 100%;
@@ -42,7 +16,6 @@ body {
   text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);
 }
 
-/* Extra markup and styles for table-esque vertical and horizontal centering */
 .site-wrapper {
   overflow: hidden;
   background-color: #333;
@@ -61,15 +34,86 @@ body {
   margin: auto 2rem;
 }
 
-/* Padding for spacing */
-.inner {
-  padding: 2rem;
+a,
+a:focus,
+a:hover {
+  color: #fff;
 }
 
+.blog-wrapper {
+  margin: 0 20%;
+  text-align: left;
 
-/*
- * Header
- */
+  .blog-header {
+    padding-top: 5rem;
+    margin-bottom: 5rem;
+  }
+
+  .blog-header {
+    padding-bottom: 1.25rem;
+    margin: 0 auto 2rem auto;
+    border-bottom: .05rem solid #eee;
+  }
+
+  .blog-title {
+    margin-bottom: 0;
+    font-size: 2rem;
+    font-weight: normal;
+  }
+
+  .blog-description {
+    font-size: 1.1rem;
+    color: #999;
+  }
+
+  .sidebar-module {
+    padding: 1rem;
+    /*margin: 0 -1rem 1rem;*/
+  }
+
+  .sidebar-module-inset {
+    padding: 1rem;
+    background-color: #999;
+    border-radius: .25rem;
+  }
+
+  .sidebar-module-inset p:last-child,
+  .sidebar-module-inset ul:last-child,
+  .sidebar-module-inset ol:last-child {
+    margin-bottom: 0;
+  }
+
+  .blog-post {
+    margin-bottom: 4rem;
+  }
+  .blog-post-title {
+    margin-bottom: .25rem;
+    font-size: 2.5rem;
+  }
+  .blog-post-meta {
+    margin-bottom: 1.25rem;
+    color: #999;
+  }
+
+  .blog-col-1 {
+    float: left;
+    width: 60%;
+  }
+
+  .blog-col-2 {
+    float: right;
+    width: 30%;
+  }
+
+  .social-links li {
+    display: inline;
+    font-size: 2rem;
+    a {
+      color: white;
+    }
+  }
+
+}
 
 .masthead {
   margin-bottom: 2rem;
@@ -77,6 +121,13 @@ body {
 
 .masthead-brand {
   margin-bottom: 0;
+  a {
+    text-decoration: none;
+  }
+}
+
+.nav-masthead {
+  margin-right: 2rem;
 }
 
 .nav-masthead .nav-link {
@@ -85,6 +136,7 @@ body {
   color: rgba(255,255,255,.5);
   background-color: transparent;
   border-bottom: .25rem solid transparent;
+  text-decoration: none;
 }
 
 .nav-masthead .nav-link:hover,
@@ -101,64 +153,9 @@ body {
   border-bottom-color: #fff;
 }
 
-@media (min-width: 48em) {
-  .masthead-brand {
-    float: left;
-  }
-  .nav-masthead {
-    float: right;
-  }
-}
-
-
-/*
- * Cover
- */
-
-.cover {
-  padding: 0 1.5rem;
-}
-.cover .btn-lg {
-  padding: .75rem 1.25rem;
-  font-weight: bold;
-}
-
-
-/*
- * Footer
- */
-
 .mastfoot {
   color: rgba(255,255,255,.5);
 }
-
-
-/*
- * Affix and center
- */
-
-@media (min-width: 40em) {
-  /* Pull out the header and footer */
-  .masthead {
-    position: fixed;
-    top: 0;
-  }
-  .mastfoot {
-    position: fixed;
-    bottom: 0;
-  }
-  /* Start the vertical centering */
-  .site-wrapper-inner {
-    vertical-align: middle;
-  }
-  /* Handle the widths */
-  .masthead,
-  .mastfoot {
-    width: 100%; /* Must be percentage or pixels for horizontal alignment */
-  }
-}
-
-/* Contact Page Styles */
 
 .card-block {
   text-align: left;
@@ -182,21 +179,81 @@ body {
   margin-right: 15px;
 }
 
-#background {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  z-index: -100;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
-  background: image-url('home_bg.png') no-repeat;
-  background-size: cover;
-}
-
 .app-footer {
   color: white;
+}
+
+.album {
+  min-height: 50rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.card {
+  float: left;
+  width: 33.333%;
+  padding: .75rem;
+  margin-bottom: 2rem;
+  border: 0;
+}
+
+.card > img {
+  margin-bottom: .75rem;
+}
+
+.card-text {
+  font-size: 85%;
+}
+
+.portfolio-wrapper {
+  padding-top: 5rem;
+}
+
+.pagination a {
+  padding: .1em .3em;
+  margin: .2em;
+  border: 1px solid white;
+  text-decoration: none;
+  color: white!important;
+}
+
+.pagination a:hover {
+  color: white!important;
+  border: 1px solid white!important;
+}
+
+@media (min-width: 48em) {
+  html {
+    font-size: 18px;
+  }
+
+  .masthead-brand {
+    float: left;
+  }
+  .nav-masthead {
+    float: right;
+  }
+}
+
+@media (min-width: 40em) {
+  .masthead {
+    position: fixed;
+    top: 0;
+  }
+  .mastfoot {
+    position: fixed;
+    bottom: 0;
+  }
+
+  .site-wrapper-inner {
+    vertical-align: middle;
+  }
+  .masthead,
+  .mastfoot {
+    width: 100%;
+  }
+
+  .blog-title {
+    font-size: 3.5rem;
+  }
 }
