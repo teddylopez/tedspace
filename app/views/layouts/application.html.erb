@@ -15,20 +15,14 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
   <body>
+    <%= render "shared/application_nav" %>
     <div class="site-wrapper">
-      <div class="site-wrapper-inner">
-        <div class="cover-container">
 
-          <%= render "shared/application_nav" %>
+      <%= yield %>
 
-          <%= yield %>
+      <%= source_helper("application") %>
 
-          <%= source_helper("application") %>
-
-          <%= alerts %>
-
-        </div>
-      </div>
+      <%= alerts %>
     </div>
   </body>
 </html>
