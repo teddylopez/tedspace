@@ -5,4 +5,9 @@ class Blog < ApplicationRecord
   belongs_to :topic
 
   enum status: { draft: 0, published: 1 }
+
+  def self.recent
+    order("created_at DESC")
+  end
+  
 end
