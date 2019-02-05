@@ -11,6 +11,8 @@ Rails.application.routes.draw do
   get 'contact', to: 'pages#contact'
   get 'noise', to: 'pages#noise'
 
+  resources :topics, only: [:index, :show]
+
   resources :blogs do
     member do
       get :toggle_status
