@@ -10,15 +10,20 @@ class BlogsController < ApplicationController
     else
       @blogs = Blog.published.recent.page(params[:page]).per(5)
     end
-    
+
     @page_title = "tedspace | my blogs"
   end
 
   # GET /blogs/1
   # GET /blogs/1.json
   def show
-    @page_title = @blog.title
-    @seo_keywords = @blog.body
+    if logged_in?(:site_admin) || @blog.published?
+      @blog = Blog.friendly.find(params[:id])
+      @page_title = @blog.title
+      @seo_keywords = @blog.body
+    else
+      redirect_to blogs_path, notice: "You are not authorized to access this page"
+    end
   end
 
   # GET /blogs/new
