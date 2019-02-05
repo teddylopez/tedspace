@@ -1,6 +1,7 @@
 <div class="blog-wrapper">
   <div class="blog-col-1">
     <h2><%= @blog.title %></h2>
+    <p><%= @blog.topic.title %></p>
     <%= link_to 'Edit', edit_blog_path(@blog) if logged_in?(:site_admin) %>
     <p>
       <%= @blog.body %>
