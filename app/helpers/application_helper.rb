@@ -31,7 +31,7 @@ module ApplicationHelper
         title: 'News'
       },
       {
-        url: contact_path,
+        url: new_contact_path,
         title: 'Contact'
       },
       {

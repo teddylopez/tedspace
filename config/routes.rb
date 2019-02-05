@@ -19,5 +19,7 @@ Rails.application.routes.draw do
     end
   end
 
+  resources :contacts, only: [:new, :create]
+
   root to: 'pages#home'
 end
