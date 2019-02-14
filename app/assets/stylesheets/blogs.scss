@@ -19,12 +19,12 @@
 
   .blog-title {
     margin-bottom: 0;
-    font-size: 2rem;
+    font-size: 4rem;
     font-weight: normal;
   }
 
   .blog-description {
-    font-size: 1.1rem;
+    font-size: 2.5rem;
     color: #999;
   }
 
@@ -110,5 +110,16 @@
     a, a:focus, a:hover {
       color: #777777;
     }
+  }
+}
+
+@media (min-width: 40em) {
+
+  .site-wrapper-inner {
+    vertical-align: middle;
+  }
+
+  .blog-title {
+    font-size: 3.5rem;
   }
 }

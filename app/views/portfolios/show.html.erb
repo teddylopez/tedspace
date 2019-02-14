@@ -1,32 +1,26 @@
-<div class="container">
+<div class="container portfolio-item-show">
   <div class="row">
-    <div class="portfolio-wrap">
-      <div class="col-md-7">
-        <%= image_tag portfolio_img(@portfolio_item.main_image, 'main'), width: '100%' %>
-      </div>
-      <div class="col-md-5">
-        <h1><%= @portfolio_item.title %></h1>
-
-        <hr>
-
-        <em><%= @portfolio_item.subtitle %></em>
-        <p><%= @portfolio_item.body %></p>
-
-        <hr>
-
-        <h3>Technologies Used:</h3>
-
-        <% @portfolio_item.technologies.each do |t| %>
-          <p><%= t.name %></p>
-        <% end %>
-        <%= link_to "View All Portfolio Items", portfolios_path %>
-      </div>
-
-      <% if logged_in?(:site_admin) %>
-        <div class="">
-          <%= link_to "Edit Item", edit_portfolio_path(@portfolio_item), class: 'btn btn-warning' %>
-        </div>
-      <% end %>
+    <div class="col-md-7">
+      <%= image_tag portfolio_img(@portfolio_item.main_image, 'main'), width: '100%' %>
     </div>
+    <div class="col-md-5">
+      <h1><%= @portfolio_item.title %></h1>
+      <br>
+      <% if logged_in?(:site_admin) %>
+        <%= link_to "Edit", edit_portfolio_path(@portfolio_item), class: "btn btn-warning" %>
+      <% end %>
+      <%= link_to "View All Portfolio Items", portfolios_path %>
+      <hr>
+      <h3>Project Outline:</h3>
+      <ul>
+        <% @portfolio_item.technologies.each do |t| %>
+          <li><%= t.name %></li>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+  <div class="row portfolio-desc">
+    <h3><em><%= @portfolio_item.subtitle %></em></h3>
+    <p><%= markdown @portfolio_item.body %></p>
   </div>
 </div>

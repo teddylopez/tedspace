@@ -6,15 +6,19 @@
 @import "jquery-ui";
 @import "gritter";
 
-.nav {
-  margin-top: 3rem!important;
-}
-
 .album {
+  width: 100%;
   min-height: 50rem;
   padding-top: 3rem;
   padding-bottom: 3rem;
   position: absolute;
+
+  .container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
 .card {
@@ -33,20 +37,35 @@
   font-size: 85%;
 }
 
-footer {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+.portfolio-item-show {
+  margin-top: 7%;
+
+  .col-md-5 {
+    text-align: left;
+  }
+
+  .portfolio-desc {
+    width: 75%;
+    margin: 2rem auto;
+
+    p {
+      text-align: left;
+    }
+  }
 }
 
-footer p {
-  text-align: center;
-  margin-bottom: .25rem;
-}
+@media(max-width:767px){
 
-.portfolio-container {
-  padding: 5rem;
-}
+  .card {
+    width: 100%;
+  }
 
-.portfolio-wrap {
-  margin-top: 10rem;
+  .portfolio-wrap {
+    margin: 0 1rem;
+  }
+
+  .portfolio-desc {
+    margin: 1rem auto;
+    width: 100%;
+  }
 }
