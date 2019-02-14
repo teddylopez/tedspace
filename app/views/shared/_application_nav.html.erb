@@ -1,7 +1,15 @@
-<header class="masthead mb-auto">
-  <h3 class="masthead-brand"><%= link_to 'tedlopez', root_path %></h3>
-  <nav class="nav nav-masthead justify-content-center app-nav">
-    <%= nav_helper 'nav-link', 'span' %>
-    <%= login_helper 'nav-link' %>
-  </nav>
+<header>
+  <div class="header-container">
+    <div class="site-logo"><a href="/"><h3 >tedlopez</h3></a></div>
+    <nav class="site-nav">
+      <div class="menu-toggle"><i class="fa fa-bolt" aria-hidden="true"></i></div>
+        <ul id="nav-list" class="site-nav--close">
+          <li><%= link_to "About Ted", about_ted_path %></a></li>
+          <li><%= link_to "Noise", noise_path %></a></li>
+          <li><%= link_to "Contact", new_contact_path %></a></li>
+          <li><%= link_to "Blog", blogs_path %></a></li>
+          <li><%= link_to "Portfolio", portfolios_path %></a></li>
+        </ul>
+    </nav>
+  </div>
 </header>

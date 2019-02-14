@@ -2,10 +2,19 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.topics {
-  margin: 5rem 0;
+.topic-wrapper {
+  margin: 8rem auto;
+
+  .blogcrumb {
+    background-color: #333!important;
+  }
+
+  .blogcrumb a {
+    font-size: 1.25em;
+    margin: 0px 10px 0px 10px;
+  }
 }
 
-.topic-wrapper {
-  margin: 0 10rem!important;
+.topic-div {
+  margin: 2rem auto;
 }
