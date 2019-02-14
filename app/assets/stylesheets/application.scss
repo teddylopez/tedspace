@@ -59,7 +59,7 @@ body {
     overflow: auto;
     margin: auto;
     position: absolute;
-    top: 100%;
+    top: 85%;
     left: 0;
     bottom: 0;
     right: 0;
@@ -135,32 +135,6 @@ a:hover {
   color: white;
 }
 
-.album {
-  min-height: 50rem;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-}
-
-.card {
-  float: left;
-  width: 33.333%;
-  padding: .75rem;
-  margin-bottom: 2rem;
-  border: 0;
-}
-
-.card > img {
-  margin-bottom: .75rem;
-}
-
-.card-text {
-  font-size: 85%;
-}
-
-.portfolio-wrapper {
-  padding-top: 5rem;
-}
-
 .pagination a {
   padding: .1em .3em;
   margin: .2em;
@@ -172,42 +146,6 @@ a:hover {
 .pagination a:hover {
   color: white!important;
   border: 1px solid white!important;
-}
-
-@media (min-width: 48em) {
-  html {
-    font-size: 18px;
-  }
-
-  .masthead-brand {
-    float: left;
-  }
-  .nav-masthead {
-    float: right;
-  }
-}
-
-@media (min-width: 40em) {
-  .masthead {
-    position: fixed;
-    top: 0;
-  }
-  .mastfoot {
-    position: fixed;
-    bottom: 0;
-  }
-
-  .site-wrapper-inner {
-    vertical-align: middle;
-  }
-  .masthead,
-  .mastfoot {
-    width: 100%;
-  }
-
-  .blog-title {
-    font-size: 3.5rem;
-  }
 }
 
 @media only screen and (max-width: 600px) {
