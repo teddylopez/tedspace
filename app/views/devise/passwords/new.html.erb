@@ -1,4 +1,4 @@
-<div class="login">
+<div class="register-form login">
   <div class="card">
     <div class="card-block">
       <h2>Forgot your password?</h2>
@@ -10,9 +10,9 @@
           <%= f.label :email %><br />
           <%= f.email_field :email, autofocus: true, autocomplete: "email", class: 'form-control' %>
         </div>
-
+        <br>
         <div class="actions">
-          <%= f.submit "Send me reset password instructions", class: 'btn btn-primary btn-block' %>
+          <%= f.submit "Send me reset link", class: 'btn btn-secondary' %>
         </div>
       <% end %>
 
