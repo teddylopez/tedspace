@@ -1,4 +1,10 @@
 <div class="topic-wrapper">
   <h1>Topics</h1>
-  <%= render @topics %>
+  <br>
+  <% @topics.each do |t| %>
+    <h3>
+      <%= link_to "#{t.title}", topic_path(t) %>
+    </h3>
+    <br>
+  <% end %>
 </div>

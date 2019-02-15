@@ -17,7 +17,7 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
   <body>
-    <div class="site-wrapper">
+    <div class="site-wrapper <%= content_for :site_wrapper_class %>">
 
       <%= render "shared/application_nav" %>
       <%= render "shared/application_video" %>

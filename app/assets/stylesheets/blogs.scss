@@ -3,7 +3,7 @@
 }
 
 .blog-wrapper {
-  margin: 5% 15%;
+  margin: 0 20%;
   text-align: left;
 
   .blog-header {
@@ -80,7 +80,8 @@
 
   .social-links li {
     display: inline;
-    font-size: 2rem;
+    padding-right: 10px;
+    font-size: 4rem;
     a {
       color: white;
     }
@@ -122,4 +123,16 @@
   .blog-title {
     font-size: 3.5rem;
   }
+}
+
+@media only screen and (max-width: 600px) {
+  .blog-wrapper .blog-col-1 {
+    width: 100%;
+    margin-bottom: 5rem;
+  }
+
+  .blog-wrapper .blog-col-2 {
+    width: 100%;
+  }
+
 }

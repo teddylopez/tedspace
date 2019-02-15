@@ -2,14 +2,20 @@
   <div class="header-container">
     <div class="site-logo"><a href="/"><h3 >tedlopez</h3></a></div>
     <nav class="site-nav">
-      <div class="menu-toggle"><i class="fa fa-bolt" aria-hidden="true"></i></div>
-        <ul id="nav-list" class="site-nav--close">
-          <li><%= link_to "About Ted", about_ted_path %></a></li>
-          <li><%= link_to "Noise", noise_path %></a></li>
-          <li><%= link_to "Contact", new_contact_path %></a></li>
-          <li><%= link_to "Blog", blogs_path %></a></li>
-          <li><%= link_to "Portfolio", portfolios_path %></a></li>
-        </ul>
+
+      <div class="menu">
+        <div class="menu-toggle"><i class="fa fa-bolt" aria-hidden="true"></i></div>
+          <ul id="nav-list" class="site-nav--close">
+            <li><%= link_to "About Ted", about_ted_path %></a></li>
+            <li><%= link_to "Noise", noise_path %></a></li>
+            <li><%= link_to "Contact", new_contact_path %></a></li>
+            <li><%= link_to "Blog", blogs_path %></a></li>
+            <li><%= link_to "Portfolio", portfolios_path %></a></li>
+            <nav class="nav-login">
+              <li class="nav-item"><%= login_helper 'nav-link' %></li>
+            </nav>
+          </ul>
+      </div>
     </nav>
   </div>
 </header>

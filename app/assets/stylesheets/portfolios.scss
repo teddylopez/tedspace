@@ -6,12 +6,26 @@
 @import "jquery-ui";
 @import "gritter";
 
+.portfolio-item-show {
+
+  text-shadow: none;
+
+  a, a:hover {
+    color: #337ab7;
+    text-shadow: none;
+    text-decoration: none;
+  }
+
+  .btn-warning {
+    color: #fff!important;
+  }
+}
+
 .album {
   width: 100%;
   min-height: 50rem;
   padding-top: 3rem;
   padding-bottom: 3rem;
-  position: absolute;
 
   .container {
     margin-right: auto;
@@ -27,6 +41,17 @@
   padding: .75rem;
   margin-bottom: 2rem;
   border: 0;
+  text-align: left;
+
+  a, a:hover {
+    color: #337ab7;
+    text-shadow: none;
+    text-decoration: none;
+  }
+
+  p {
+    text-shadow: none;
+  }
 }
 
 .card > img {
@@ -47,10 +72,8 @@
   .portfolio-desc {
     width: 75%;
     margin: 2rem auto;
-
-    p {
-      text-align: left;
-    }
+    padding-bottom: 10rem;
+    text-align: left;
   }
 }
 

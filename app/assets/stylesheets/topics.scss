@@ -3,7 +3,9 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .topic-wrapper {
-  margin: 8rem auto;
+  margin-left: 25%;
+  text-align: left;
+  margin-bottom: 8%;
 
   .blogcrumb {
     background-color: #333!important;
@@ -17,4 +19,15 @@
 
 .topic-div {
   margin: 2rem auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .topic-wrapper {
+    margin: 0;
+    padding: 10px;
+  }
+
+  .blog-wrapper {
+    margin: 0!important;
+  }
 }

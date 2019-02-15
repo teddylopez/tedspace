@@ -1,3 +1,5 @@
+<% content_for :site_wrapper_class, 'secondary-wrapper-class' %>
+
 <div class="container portfolio-item-show">
   <div class="row">
     <div class="col-md-7">
@@ -24,3 +26,5 @@
     <p><%= markdown @portfolio_item.body %></p>
   </div>
 </div>
+
+<%= render 'shared/application_footer' %>

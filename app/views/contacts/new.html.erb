@@ -2,7 +2,7 @@
   <div class="contact-flex-wrap">
     <div class="flex-form">
       <h1>CONTACT</h1>
-      
+
       <%= form_for @contact do |f| %>
         <%= f.text_field :name, required: true, class: "form-control", placeholder: "Name" %>
 
@@ -28,3 +28,5 @@
     </div>
   </div>
 </div>
+
+<%= render 'shared/application_footer' %>

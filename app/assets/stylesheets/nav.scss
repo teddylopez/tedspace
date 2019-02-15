@@ -1,3 +1,9 @@
+header {
+  height: 120px;
+  padding: 1em 0;
+  z-index: 100;
+}
+
 .header-container {
   width: 95%;
   max-width: 1000px;
@@ -5,102 +11,43 @@
 
   .site-logo {
     float: left;
-    display: inline-block;
 
     a {
       text-decoration: none;
     }
   }
-}
 
-header {
-  padding: 1em 0;
-  position: relative;
-  height: 20px;
-  z-index: 100;
-}
+  .menu {
+    float: right;
 
-header::after {
-  content: '';
-  clear: both;
-  display: block;
-}
+    .menu-toggle {
+      text-align: right;
+      padding-top: 2rem;
 
-.site-nav {
-  padding-top: 3rem;
-  top: 100%;
-  right: 0%;
-  height: 0px;
-  height: auto;
-  position: relative;
-  background: transparent;
-  float: right;
-  clip-path: initial;
-  // clip-path: circle(0px at top right);
-  // transition: clip-path ease-in-out 700ms;
-/*   display: none; */
+      i {
+        font-size: 3rem;
+      }
+    }
+
+    ul {
+      position: absolute;
+      width: 200px;
+      left: 75%;
+      top: 75px;
+
+      li {
+        list-style-type: none;
+        text-align: right;
+        margin-bottom: 5px;
+      }
+    }
+  }
 }
 
 .site-nav--close {
-  clip-path: circle(250% at top right);
   display: none;
 }
 
 .site-nav--open {
-  clip-path: circle(250% at top right);
   display: block;
-}
-
-#nav-list {
-  padding-right: 20px;
-  width: 200px;
-  // background: rgba(0, 0, 0, 0.5);
-  border-radius: 2px;
-  position: relative;
-  margin-top: 1rem;
-  list-style: none;
-  text-align: right;
-}
-
-.site-nav a {
-  display: block;
-  padding: .5rem 0;
-  text-transform: uppercase;
-  text-decoration: none;
-}
-
-.site-nav--icon {
-  display: inline-block;
-  font-size: 1.5em;
-  margin-right: 1em;
-  width: 1.1em;
-  text-align: right;
-}
-
-.menu-toggle {
-  position: absolute;
-  top: 1rem;
-  right: .5rem;
-  cursor: pointer;
-}
-
-.open .bolt {
-  transform: rotate(45deg);
-}
-
-.open .bolt::before {
-  opacity: 0;
-}
-
-.open .bolt::after {
-  transform: translateY(-3px) rotate(-90deg);
-}
-
-@media only screen and (max-width: 600px) {
-  .menu-toggle {
-    position: absolute;
-    top: 2rem;
-    right: .5rem;
-    cursor: pointer;
-  }
 }

@@ -1,5 +1,10 @@
+.list-inline-item {
+  .fa-inverse:hover {
+    color: #c8102e;
+  }
+}
+
 .lax-wrap {
-  position: absolute;
   max-width: 100%;
   margin: 0 auto;
   font-size: 24px;
@@ -47,18 +52,25 @@
 
 .about-me {
   text-align: left;
-	padding-left: 5%;
-  padding-top: 15%;
+	padding-left: 10%;
+  padding-top: 10%;
   padding-bottom: 22%;
+
   .mailto {
     color: #c8102e
   }
+
   h1 {
     font-size: 55px;
   }
+
   a {
     text-decoration: none;
     color: #424652;
+  }
+
+  ul {
+    padding: 0;
   }
 }
 
@@ -91,6 +103,35 @@
 .icons {
   margin-top: 2rem;
   i {
-    font-size: 2rem;
+    font-size: 4rem;
+  }
+}
+
+.classes {
+  margin-bottom: 4rem;
+
+  p {
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+
+  .about-me {
+    padding: 0;
+
+    ul {
+      padding: 0;
+    }
+
+    .about-icons {
+      text-align: center;
+    }
+  }
+
+  .skills {
+    .desc {
+      margin: 0;
+    }
   }
 }
