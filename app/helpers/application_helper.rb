@@ -69,6 +69,12 @@ module ApplicationHelper
     js add_gritter(msg, :title => "tedlopez", sticky: false, time: 1000)
   end
 
+  def video_randomizer
+    movie = ['https://s3.amazonaws.com/tedspace/videos/Waves.mp4',
+      'https://s3.amazonaws.com/tedspace/videos/Lightning.mp4',
+      'https://s3.amazonaws.com/tedspace/videos/Stars.mov'].sample
+  end
+
   def copyright_generator
     LopezViewTool::Renderer.copyright 'Ted López', 'All rights reserved'
   end
