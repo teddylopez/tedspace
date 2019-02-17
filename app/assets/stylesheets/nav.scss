@@ -2,6 +2,12 @@ header {
   height: 120px;
   padding: 1em 0;
   z-index: 100;
+  text-shadow:
+    3px 3px 0 #000,
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
 }
 
 .header-container {
@@ -21,8 +27,11 @@ header {
     float: right;
 
     .menu-toggle {
+      cursor: pointer;
       text-align: right;
       padding-top: 1.5rem;
+      transition: all 0.05s;
+      transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
 
       i {
         font-size: 3rem;

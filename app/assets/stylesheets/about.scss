@@ -1,4 +1,12 @@
 .list-inline-item {
+
+  text-shadow:
+    3px 3px 0 #000,
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+    
   .fa-inverse:hover {
     color: #c8102e;
   }
@@ -62,6 +70,12 @@
 
   h1 {
     font-size: 55px;
+    text-shadow:
+      3px 3px 0 #000,
+      -1px -1px 0 #000,
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+      1px 1px 0 #000;
   }
 
   a {
@@ -82,10 +96,16 @@
   }
 }
 
-.experience, .education, .interests {
+.experience, .education, .interests, .skills {
 
   h1 {
     text-align: center;
+    text-shadow:
+      3px 3px 0 #000,
+      -1px -1px 0 #000,
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+      1px 1px 0 #000;
   }
   p {
     text-align: left;
@@ -102,6 +122,12 @@
 
 .icons {
   margin-top: 2rem;
+  text-shadow:
+    3px 3px 0 #000,
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
   i {
     font-size: 4rem;
   }

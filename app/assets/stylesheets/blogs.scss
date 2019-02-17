@@ -30,6 +30,12 @@
     margin-bottom: 0;
     font-size: 4rem;
     font-weight: normal;
+    text-shadow:
+      3px 3px 0 #000,
+      -1px -1px 0 #000,
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+      1px 1px 0 #000;
   }
 
   .blog-description {
@@ -97,6 +103,12 @@
     display: inline;
     padding-right: 10px;
     font-size: 4rem;
+    text-shadow:
+      3px 3px 0 #000,
+      -1px -1px 0 #000,
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+      1px 1px 0 #000;
     a {
       color: white;
     }
