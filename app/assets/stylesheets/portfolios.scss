@@ -11,7 +11,7 @@
   text-shadow: none;
 
   a, a:hover {
-    color: #337ab7;
+    color: white;
     text-shadow: none;
     text-decoration: none;
   }
@@ -54,7 +54,7 @@
   text-align: left;
 
   a, a:hover {
-    color: #337ab7;
+    color: white;
     text-shadow: none;
     text-decoration: none;
   }
@@ -91,6 +91,10 @@
 
   .card {
     width: 100%;
+
+    a {
+      color: white;
+    }
   }
 
   .portfolio-wrap {
