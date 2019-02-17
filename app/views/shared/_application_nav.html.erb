@@ -5,19 +5,20 @@
 
       <div class="menu">
         <div class="menu-toggle"><i class="fa fa-bolt" aria-hidden="true"></i></div>
-          <ul id="nav-list" class="site-nav--close">
-            <li><%= link_to "About Ted", about_ted_path %></a></li>
-            <li><%= link_to "Noise", noise_path %></a></li>
-            <li><%= link_to "Contact", new_contact_path %></a></li>
-            <li><%= link_to "Blog", blogs_path %></a></li>
-            <li><%= link_to "Portfolio", portfolios_path %></a></li>
-            <nav class="nav-login">
-              <li class="nav-item"><%= login_helper 'nav-link' %></li>
-            </nav>
+          <ul id="nav-list" class="hide">
+            <div class="li-div">
+              <li><%= link_to "About Ted", about_ted_path %></a></li>
+              <li><%= link_to "Noise", noise_path %></a></li>
+              <li><%= link_to "Contact", new_contact_path %></a></li>
+              <li><%= link_to "Blog", blogs_path %></a></li>
+              <li><%= link_to "Portfolio", portfolios_path %></a></li>
+              <nav class="nav-login">
+                <li class="nav-item"><%= login_helper 'nav-link' %></li>
+              </nav>
+            </div>
           </ul>
       </div>
     </nav>
   </div>
 
-  <div class="opaque"></div>
 </header>
