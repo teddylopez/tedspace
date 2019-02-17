@@ -6,7 +6,7 @@
     1px -1px 0 #000,
     -1px 1px 0 #000,
     1px 1px 0 #000;
-    
+
   .fa-inverse:hover {
     color: #c8102e;
   }
@@ -153,6 +153,10 @@
     .about-icons {
       text-align: center;
     }
+  }
+
+  .lax-1, .lax-2, .lax-3, .lax-4 {
+    display: none;
   }
 
   .skills {

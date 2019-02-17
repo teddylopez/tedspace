@@ -156,6 +156,14 @@ a:hover {
 }
 
 @media only screen and (max-width: 600px) {
+
+  .site-wrapper {
+    background: #F2994A;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(left, #F2C94C, #F2994A);
+    background: -o-linear-gradient(left, #F2C94C, #F2994A);
+    background: linear-gradient(to right, #F2C94C, #F2994A);  /* Chrome 10-25, Safari 5.1-6 */ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+
   .video {
     display: none;
   }

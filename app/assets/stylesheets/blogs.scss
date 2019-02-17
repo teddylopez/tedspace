@@ -9,7 +9,8 @@
 }
 
 .blog-flex {
-  margin: 0 20%;
+  flex-direction: column;
+  flex: 3;
 }
 
 .blog-wrapper {
@@ -153,13 +154,44 @@
 }
 
 @media only screen and (max-width: 600px) {
+
+  .site-wrapper {
+  }
+
+  .blog-wrapper {
+    width: 100%;
+    padding: 10px;
+
+    .blog-description {
+      font-size: 2.5rem;
+      color: white;
+    }
+
+    .blog-post-meta {
+      margin-bottom: 1.25rem;
+      color: white;
+    }
+  }
+
   .blog-wrapper .blog-col-1 {
     width: 100%;
     margin-bottom: 5rem;
   }
 
   .blog-wrapper .blog-col-2 {
-    width: 100%;
+    width: 75%;
+    margin: 0 auto;
+    float: none;
+
+    img {
+      border-radius: 50%;
+    }
+
+    .sidebar-module-inset {
+      padding: 1rem;
+      background-color: transparent;
+      border-radius: .25rem;
+    }
   }
 
 }
