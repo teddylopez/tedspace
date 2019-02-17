@@ -167,4 +167,9 @@ a:hover {
   .video {
     display: none;
   }
+
+  .code {
+    max-width: 345px;
+    overflow: scroll;
+  }
 }
