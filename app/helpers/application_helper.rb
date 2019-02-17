@@ -100,7 +100,8 @@ module ApplicationHelper
       'https://s3.amazonaws.com/tedspace/videos/ski.mp4',
       'https://s3.amazonaws.com/tedspace/videos/rain.mp4',
       'https://s3.amazonaws.com/tedspace/videos/snowycity.mp4',
-      'https://s3.amazonaws.com/tedspace/videos/snowflakes.mp4'
+      'https://s3.amazonaws.com/tedspace/videos/snowflakes.mp4',
+      'https://s3.amazonaws.com/tedspace/videos/baboon.mp4'
     ].sample
   end
 
