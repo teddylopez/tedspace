@@ -1,0 +1,58 @@
+.typed-js {
+  text-align: center;
+  margin: 4rem 0;
+  text-shadow:
+    3px 3px 0 #000,
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+.typed-cursor {
+  opacity: 1;
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite;
+}
+@keyframes blink {
+  0% { opacity:1; }
+  50% { opacity:0; }
+  100% { opacity:1; }
+}
+@-webkit-keyframes blink {
+  0% { opacity:1; }
+  50% { opacity:0; }
+  100% { opacity:1; }
+}
+@-moz-keyframes blink {
+  0% { opacity:1; }
+  50% { opacity:0; }
+  100% { opacity:1; }
+}
+
+.twitter-wrapper {
+  width: 65%;
+  margin: 0 auto;
+}
+
+.tweet {
+  text-align: left;
+}
+
+.tweet-card {
+  background-color: #424652;
+
+  a {
+    color: #c6ff00;
+  }
+}
+
+.tweet > .tweet-card {
+  margin: 1rem 0;
+  padding: 30px;
+}
+
+.twitter-wrapper {
+  margin: 0 auto;
+}

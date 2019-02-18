@@ -1,0 +1,68 @@
+// Place all the styles related to the Contacts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.contact-wrap {
+  margin-top: 5rem;
+
+  h1 {
+    text-shadow:
+      3px 3px 0 #000,
+      -1px -1px 0 #000,
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+      1px 1px 0 #000;
+  }
+}
+
+.contact-info {
+  padding: 5rem 0;
+}
+
+.card-block {
+  text-align: left;
+  .contact_flex-container, .login_flex-container {
+    display: flex;
+    align-content: space-between;
+  }
+  .login_flex-div {
+    flex: 1;
+  }
+}
+
+.contact-flex-wrap {
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 0 10%;
+
+  input {
+    color: black;
+  }
+
+  .flex-form {
+    flex: 1;
+    margin: 0 20%;
+  }
+
+  .flex-map {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    flex: 1;
+    overflow: hidden;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .contact-flex-wrap {
+    margin: 0;
+
+    iframe {
+      width: 90%;
+    }
+
+    .flex-form {
+      margin: 0 10%;
+    }
+
+  }
+}

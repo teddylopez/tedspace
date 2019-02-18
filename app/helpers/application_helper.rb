@@ -11,9 +11,38 @@ module ApplicationHelper
 
   def source_helper(styles)
     if session[:source]
-      greeting = "Thanks for visiting me from #{session[:source]}. You can reach me directly #{link_to 'here', contact_path} if you'd like to work together."
+      greeting = "Thanks for visiting me from #{session[:source]}, please feel free to #{ link_to 'contact me', contact_path } if you'd like to work together."
       content_tag(:div, greeting.html_safe, class: styles)
     end
+  end
+
+  def nav_items
+    [
+      {
+        url: root_path,
+        title: 'Home'
+      },
+      {
+        url: about_ted_path,
+        title: 'About Me'
+      },
+      {
+        url: noise_path,
+        title: 'News'
+      },
+      {
+        url: new_contact_path,
+        title: 'Contact'
+      },
+      {
+        url: blogs_path,
+        title: 'Blog'
+      },
+      {
+        url: portfolios_path,
+        title: 'Portfolio'
+      },
+    ]
   end
 
   def nav_helper style, tag_type
@@ -28,12 +57,6 @@ module ApplicationHelper
     "active" if current_page? path
   end
 
-  def video_randomizer
-    movie = ['https://s3.amazonaws.com/tedspace/videos/Waves.mp4',
-      'https://s3.amazonaws.com/tedspace/videos/Lightning.mp4',
-      'https://s3.amazonaws.com/tedspace/videos/Stars.mov'].sample
-  end
-
   def alerts
     alert = (flash[:alert] || flash[:error] || flash[:notice])
 
@@ -43,31 +66,46 @@ module ApplicationHelper
   end
 
   def alert_generator msg
-    js add_gritter(msg, :title => "tedlopez", sticky: false, time: 2000)
+    js add_gritter(msg, :title => "tedlopez", sticky: false, time: 1000)
   end
 
-  class CodeRayify < Redcarpet::Render::HTML
-    def block_code(code, language)
-      CodeRay.scan(code, language).div
-    end
+  def video_randomizer
+    movie = ['https://s3.amazonaws.com/tedspace/videos/Waves.mp4',
+      'https://s3.amazonaws.com/tedspace/videos/Lightning.mp4',
+      'https://s3.amazonaws.com/tedspace/videos/Stars.mov',
+      'https://s3.amazonaws.com/tedspace/videos/lapse.mp4',
+      'https://s3.amazonaws.com/tedspace/videos/candle.mp4',
+      'https://s3.amazonaws.com/tedspace/videos/cliff.mp4',
+      'https://s3.amazonaws.com/tedspace/videos/clouds.mp4',
+      'https://s3.amazonaws.com/tedspace/videos/earth.mp4',
+      'https://s3.amazonaws.com/tedspace/videos/elevator.mp4',
+      'https://s3.amazonaws.com/tedspace/videos/fire.mp4',
+      'https://s3.amazonaws.com/tedspace/videos/lava.mp4',
+      'https://s3.amazonaws.com/tedspace/videos/storm.mp4',
+      'https://s3.amazonaws.com/tedspace/videos/sun.mp4',
+      'https://s3.amazonaws.com/tedspace/videos/fish.mp4',
+      'https://s3.amazonaws.com/tedspace/videos/fish2.mp4',
+      'https://s3.amazonaws.com/tedspace/videos/fish3.mp4',
+      'https://s3.amazonaws.com/tedspace/videos/sheep.mp4',
+      'https://s3.amazonaws.com/tedspace/videos/sheep2.mp4',
+      'https://s3.amazonaws.com/tedspace/videos/birds.mp4',
+      'https://s3.amazonaws.com/tedspace/videos/fireworks.mp4',
+      'https://s3.amazonaws.com/tedspace/videos/doggiecar.mp4',
+      'https://s3.amazonaws.com/tedspace/videos/walrus.mp4',
+      'https://s3.amazonaws.com/tedspace/videos/dino.mp4',
+      'https://s3.amazonaws.com/tedspace/videos/blackhole.mp4',
+      'https://s3.amazonaws.com/tedspace/videos/croc.mp4',
+      'https://s3.amazonaws.com/tedspace/videos/desert.mp4',
+      'https://s3.amazonaws.com/tedspace/videos/ice.mp4',
+      'https://s3.amazonaws.com/tedspace/videos/ski.mp4',
+      'https://s3.amazonaws.com/tedspace/videos/rain.mp4',
+      'https://s3.amazonaws.com/tedspace/videos/snowycity.mp4',
+      'https://s3.amazonaws.com/tedspace/videos/snowflakes.mp4',
+      'https://s3.amazonaws.com/tedspace/videos/baboon.mp4'
+    ].sample
   end
 
-  def markdown(text)
-    language ||= :plaintext
-    coderayified = CodeRayify.new(filter_html: true, hard_wrap: true)
-
-    options = {
-      fenced_code_blocks: true,
-      no_intra_emphasis: true,
-      autolink: true,
-      lax_html_blocks: true,
-    }
-
-    markdown_to_html = Redcarpet::Markdown.new(coderayified, options)
-    markdown_to_html.render(text).html_safe
-  end
-
-  def blog_status_color blog
-    'color: red;' if blog.draft?
+  def copyright_generator
+    LopezViewTool::Renderer.copyright 'Ted López', 'All rights reserved'
   end
 end

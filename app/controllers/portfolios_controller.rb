@@ -1,17 +1,17 @@
 class PortfoliosController < ApplicationController
-  before_action :set_portfolio_item, only: [:edit, :show, :update, :destroy]
-  access all: [:show, :index, :angular], user: {except: [:destroy, :new, :create, :update, :edit, :sort]}, site_admin: :all
-  layout 'portfolio'
+  before_action :set_portfolio_item, only: [:edit, :update, :show, :destroy]
+  access all: [:show, :index, :react], user: {except: [:destroy, :new, :create, :update, :edit, :sort]}, site_admin: :all
 
   def index
     @portfolio_items = Portfolio.by_position
   end
 
   def sort
-    params[:order].each do |k, v|
-      Portfolio.find(v[:id]).update(position: v[:position])
+    params[:order].each do |key, value|
+      Portfolio.find(value[:id]).update(position: value[:position])
     end
-    render body: nil
+
+    render nothing: true
   end
 
   def react
@@ -62,6 +62,7 @@ class PortfoliosController < ApplicationController
   def portfolio_params
     params.require(:portfolio).permit(:title,
                                       :subtitle,
+                                      :url,
                                       :body,
                                       :main_image,
                                       :thumb_image,

@@ -91,9 +91,6 @@ Rails.application.configure do
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
 
-  config.action_cable.allowed_request_origins = ['http://www.tedlopez.us', 'http://tedlopez.us']
-  config.action_cable.url = "wss://tedlopez.us/cable"
-
   config.action_mailer.default_url_options = { host: 'http://tedlopez.us'}
   config.action_mailer.delivery_method = :smtp
 
@@ -106,4 +103,11 @@ Rails.application.configure do
     :authentication => :plain,
     :enable_starttls_auto => true
   }
+
+  Dynopoker.configure do |config|
+    config.address = 'http://wakemydyno.com'
+    #  config.enable = false # default is true
+    #  config.poke_frequency = 123 # default is 1800s (30min)
+  end
+
 end

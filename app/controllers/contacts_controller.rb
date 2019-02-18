@@ -1,6 +1,8 @@
 class ContactsController < ApplicationController
+
   def new
     @contact = Contact.new
+    # @page_title = "tedlopez | contact me"
   end
 
   def create
@@ -13,4 +15,5 @@ class ContactsController < ApplicationController
       render :new
     end
   end
+
 end

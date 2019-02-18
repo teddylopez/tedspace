@@ -1,4 +1,5 @@
 module PortfoliosHelper
+
   def image_generator(height:, width:)
     "http://placehold.it/#{height}x#{width}"
   end
@@ -12,4 +13,5 @@ module PortfoliosHelper
       image_generator(height: '600', width: '400')
     end
   end
+
 end

@@ -1,8 +1,9 @@
-<div class="blog-col-1">
-  <%= paginate @blogs %>
-  <%= render @blogs %>
-  <%= paginate @blogs %>
-  <br>
-  <br>
-  <br>
+<div class="blog-wrapper">
+  <%= render 'shared/blog_masthead' %>
+  <div class="blog-col-1">
+    <%= paginate @blogs %>
+    <%= render @blogs %>
+    <%= paginate @blogs %>
+  </div>
+    <%= render 'shared/blog_sidebar' %>
 </div>

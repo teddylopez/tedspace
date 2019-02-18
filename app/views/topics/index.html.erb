@@ -1,7 +1,10 @@
-<div class="col-sm-8 blog-main">
-  <div class="topic-wrap">
-    <h1 class="topic-header">All Topics</h1>
-    <hr>
-    <%= render @topics %>
-  </div>
+<div class="topic-wrapper">
+  <h1>Topics</h1>
+  <br>
+  <% @topics.each do |t| %>
+    <h3>
+      <%= link_to "#{t.title}", topic_path(t) %>
+    </h3>
+    <br>
+  <% end %>
 </div>

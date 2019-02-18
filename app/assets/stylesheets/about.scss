@@ -1,0 +1,167 @@
+.list-inline-item {
+
+  text-shadow:
+    3px 3px 0 #000,
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+
+  .fa-inverse:hover {
+    color: #c8102e;
+  }
+}
+
+.lax-wrap {
+  max-width: 100%;
+  margin: 0 auto;
+  font-size: 24px;
+  padding: 25px;
+  li {
+    display: inline-block;
+  }
+}
+
+.lax-1 {
+  background: url("canyon.jpeg") no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 500px;
+}
+
+.lax-2 {
+  background: url("islands.jpeg") no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 500px;
+}
+
+.lax-3 {
+  background: url("yosemite.jpeg") no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 500px;
+}
+
+.lax-4 {
+  background: url("milkyway.jpeg") no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 500px;
+}
+
+.desc {
+  margin: 0 15%;
+}
+
+.align, .subhead {
+  text-align: left;
+}
+
+.about-me {
+  text-align: left;
+	padding-left: 10%;
+  padding-top: 10%;
+  padding-bottom: 22%;
+
+  .mailto {
+    color: #c8102e
+  }
+
+  h1 {
+    font-size: 55px;
+    text-shadow:
+      3px 3px 0 #000,
+      -1px -1px 0 #000,
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+      1px 1px 0 #000;
+  }
+
+  a {
+    text-decoration: none;
+    color: #424652;
+  }
+
+  ul {
+    padding: 0;
+  }
+}
+
+.skills {
+  margin-top: 10%;
+  margin-bottom: 10%;
+  p {
+    text-align: left;
+  }
+}
+
+.experience, .education, .interests, .skills {
+
+  h1 {
+    text-align: center;
+    text-shadow:
+      3px 3px 0 #000,
+      -1px -1px 0 #000,
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+      1px 1px 0 #000;
+  }
+  p {
+    text-align: left;
+  }
+}
+
+.education {
+  text-align: left;
+}
+
+.interests {
+  margin-bottom: 8rem;
+}
+
+.icons {
+  margin-top: 2rem;
+  text-shadow:
+    3px 3px 0 #000,
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+  i {
+    font-size: 4rem;
+  }
+}
+
+.classes {
+  margin-bottom: 4rem;
+
+  p {
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+
+  .about-me {
+    padding: 0;
+
+    ul {
+      padding: 0;
+    }
+
+    .about-icons {
+      text-align: center;
+    }
+  }
+
+  .lax-1, .lax-2, .lax-3, .lax-4 {
+    display: none;
+  }
+
+  .skills {
+    .desc {
+      margin: 0;
+    }
+  }
+}

@@ -1,5 +1,8 @@
-<div class="col-sm-8 blog-main">
+<div class="topic-wrapper">
   <h1><%= @topic.title %></h1>
-  <hr>
-  <p><%= render @blogs %></p>
+  <br>
+  <%= paginate @blogs %>
+  <%= render @blogs %>
+  <%= paginate @blogs %>
 </div>
+<%= render 'shared/application_footer' %>

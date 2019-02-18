@@ -1,9 +1,9 @@
 <div class="flex-home">
   <div class="inner cover home-flex-item">
-    <h1>
-      <span class="element"></span>
-    </h1>
     <div class="twitter-wrapper">
+      <h1 class="typed-js">
+        <span class="element"></span>
+      </h1>
       <div class="tweet-flex">
         <% @tweets.each do |tweet| %>
           <div class="tweet">
@@ -16,3 +16,5 @@
     </div>
   </div>
 </div>
+
+<%= render 'shared/application_footer' %>

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <div class="login">
   <div class="login-card">
     <div class="card-block">
@@ -11,6 +12,23 @@
 
           <div class="field">
             <%= f.password_field :password, autocomplete: "off", class: 'form-control', placeholder: "Password" %>
+=======
+<div class="register-form">
+  <div class="login">
+    <div class="card">
+      <div class="card-block">
+        <h2>Log in</h2>
+
+        <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+          <div class="field">
+            <%= f.label :email %><br />
+            <%= f.email_field :email, autofocus: true, autocomplete: "email", class: 'form-control' %>
+          </div>
+
+          <div class="field">
+            <%= f.label :password %><br />
+            <%= f.password_field :password, autocomplete: "off", class: 'form-control' %>
+>>>>>>> redesign
           </div>
 
           <% if devise_mapping.rememberable? -%>
@@ -24,7 +42,10 @@
             <%= f.submit "Log in", class: 'btn btn-secondary' %>
           </div>
         <% end %>
+<<<<<<< HEAD
         <br>
+=======
+>>>>>>> redesign
         <div class="auth-links">
           <%= render "devise/shared/links" %>
         </div>

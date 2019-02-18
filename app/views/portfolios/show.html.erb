@@ -1,7 +1,11 @@
-<div class="container item-show portfolio-container">
+<% content_for :site_wrapper_class, 'secondary-wrapper-class' %>
+
+<div class="container portfolio-item-show">
   <div class="row">
     <div class="col-md-7">
-      <%= image_tag portfolio_img(@portfolio_item.main_image, 'main'), width: '100%' %>
+        <a href="<%= @portfolio_item.url %>" target=_blank>
+          <%= image_tag portfolio_img(@portfolio_item.main_image, 'main'), width: '100%' %>
+        </a>
     </div>
     <div class="col-md-5">
       <h1><%= @portfolio_item.title %></h1>
@@ -11,7 +15,7 @@
       <% end %>
       <%= link_to "View All Portfolio Items", portfolios_path %>
       <hr>
-      <h3>Project Outline:</h3>
+      <h3>Project Details:</h3>
       <ul>
         <% @portfolio_item.technologies.each do |t| %>
           <li><%= t.name %></li>
@@ -20,7 +24,9 @@
     </div>
   </div>
   <div class="row portfolio-desc">
-    <h3><em><%= @portfolio_item.subtitle %></em></h3>
+    <h3><%= @portfolio_item.subtitle %></h3>
     <p><%= markdown @portfolio_item.body %></p>
   </div>
 </div>
+
+<%= render 'shared/application_footer' %>

@@ -2,32 +2,30 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title><%= @page_title %></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>tedlopez</title>
     <%= csrf_meta_tags %>
 
     <META name="keywords" content="<%= @seo_keywords %>" />
-    <%= favicon_link_tag 'favicons/black-square.png' %>
+
+    <%= favicon_link_tag 'favicons/red-square.png' %>
+
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <%= render 'layouts/google_analytics' %>
+    <%= render 'layouts/google-analytics' %>
+
   </head>
   <body>
-    <div class="site-wrapper">
-      <div class="site-wrapper-inner">
-        <div class="cover-container">
+    <div class="site-wrapper <%= content_for :site_wrapper_class %>">
 
-          <%= render "shared/application_video" %>
-          <%= render "shared/application_nav" %>
-
-          <%= yield %>
-
-          <%= render "shared/application_footer" %>
-          <%= alerts %>
-        </div>
-      </div>
+      <%= render "shared/application_nav" %>
+      <%= render "shared/application_video" %>
+      <%= yield %>
+      <%= source_helper("application") %>
+      <%= alerts %>
     </div>
   </body>
 </html>

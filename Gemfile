@@ -22,7 +22,6 @@ gem 'lopez_view_tool', '~> 0.1.0'
 gem 'petergate', '~> 1.8', '>= 1.8.1'
 gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.4'
 gem 'kaminari', '~> 1.1', '>= 1.1.1'
-gem 'mail_form', '~> 1.7', '>= 1.7.1'
 gem 'jquery-rails', '~> 4.3', '>= 4.3.3'
 gem 'jquery-ui-rails', '~> 6.0', '>= 6.0.1'
 gem 'carrierwave', '~> 1.2', '>= 1.2.2'
@@ -32,10 +31,11 @@ gem 'dotenv-rails', '~> 2.3'
 gem 'cocoon', '~> 1.2', '>= 1.2.11'
 gem 'gritter', '~> 1.2'
 gem 'twitter', '~> 6.2'
-gem 'redis', '~> 4.0', '>= 4.0.1'
 gem 'redcarpet', '~> 3.4'
-gem 'coderay', '~> 1.1', '>= 1.1.2'
-gem 'scout_apm'
+gem 'coderay', '~> 1.1', '>= 1.1.1'
+gem 'mail_form', '~> 1.7', '>= 1.7.1'
+gem 'rails_12factor', group: :production
+gem 'dynopoker'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
