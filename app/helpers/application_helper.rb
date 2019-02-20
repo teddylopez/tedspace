@@ -78,15 +78,11 @@ module ApplicationHelper
       'https://s3.amazonaws.com/tedspace/videos/elevator.mp4',
       'https://s3.amazonaws.com/tedspace/videos/storm.mp4',
       'https://s3.amazonaws.com/tedspace/videos/fish2.mp4',
-      'https://s3.amazonaws.com/tedspace/videos/sheep.mp4',
-      'https://s3.amazonaws.com/tedspace/videos/sheep2.mp4',
       'https://s3.amazonaws.com/tedspace/videos/doggiecar.mp4',
       'https://s3.amazonaws.com/tedspace/videos/dino.mp4',
       'https://s3.amazonaws.com/tedspace/videos/blackhole.mp4',
       'https://s3.amazonaws.com/tedspace/videos/desert.mp4',
-      'https://s3.amazonaws.com/tedspace/videos/ski.mp4',
       'https://s3.amazonaws.com/tedspace/videos/snowycity.mp4',
-      'https://s3.amazonaws.com/tedspace/videos/baboon.mp4',
       'https://s3.amazonaws.com/tedspace/videos/ramones-short.mp4',
       'https://s3.amazonaws.com/tedspace/videos/whitestripes-short.mp4',
       'https://s3.amazonaws.com/tedspace/videos/bb-short.mp4',
@@ -96,7 +92,9 @@ module ApplicationHelper
       'https://s3.amazonaws.com/tedspace/videos/voyeur.mp4',
       'https://s3.amazonaws.com/tedspace/videos/daredevildan.mp4',
       'https://s3.amazonaws.com/tedspace/videos/chalkboard.mp4',
-      'https://s3.amazonaws.com/tedspace/videos/hendrix.mp4'
+      'https://s3.amazonaws.com/tedspace/videos/hendrix.mp4',
+      'https://s3.amazonaws.com/tedspace/videos/austinpowers.mp4',
+      'https://s3.amazonaws.com/tedspace/videos/waynesworld.mp4'
     ].sample
   end
 
