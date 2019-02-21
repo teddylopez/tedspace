@@ -91,7 +91,6 @@ module ApplicationHelper
       'https://s3.amazonaws.com/tedspace/videos/toasters.mp4',
       'https://s3.amazonaws.com/tedspace/videos/voyeur.mp4',
       'https://s3.amazonaws.com/tedspace/videos/daredevildan.mp4',
-      'https://s3.amazonaws.com/tedspace/videos/chalkboard.mp4',
       'https://s3.amazonaws.com/tedspace/videos/hendrix.mp4',
       'https://s3.amazonaws.com/tedspace/videos/austinpowers.mp4',
       'https://s3.amazonaws.com/tedspace/videos/waynesworld.mp4'
