@@ -1,0 +1,188 @@
+/* line 1, /Users/tedlopez/Documents/projects/tedspace/app/assets/stylesheets/blogs.scss */
+.blog-main {
+  margin: 5rem 0;
+}
+
+/* line 6, /Users/tedlopez/Documents/projects/tedspace/app/assets/stylesheets/blogs.scss */
+.blog-content a, .blog-content a:hover {
+  color: #26de81;
+}
+
+/* line 11, /Users/tedlopez/Documents/projects/tedspace/app/assets/stylesheets/blogs.scss */
+.blog-flex {
+  flex-direction: column;
+  flex: 3;
+}
+
+/* line 16, /Users/tedlopez/Documents/projects/tedspace/app/assets/stylesheets/blogs.scss */
+.blog-wrapper {
+  margin: 0 20%;
+  text-align: left;
+}
+/* line 20, /Users/tedlopez/Documents/projects/tedspace/app/assets/stylesheets/blogs.scss */
+.blog-wrapper .blog-header {
+  padding-top: 3rem;
+  margin-bottom: 5rem;
+}
+/* line 25, /Users/tedlopez/Documents/projects/tedspace/app/assets/stylesheets/blogs.scss */
+.blog-wrapper .blog-header {
+  padding-bottom: 1.25rem;
+  margin: 0 auto 6rem auto;
+}
+/* line 30, /Users/tedlopez/Documents/projects/tedspace/app/assets/stylesheets/blogs.scss */
+.blog-wrapper .blog-title {
+  margin-bottom: 0;
+  font-size: 4rem;
+  font-weight: normal;
+  text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+/* line 42, /Users/tedlopez/Documents/projects/tedspace/app/assets/stylesheets/blogs.scss */
+.blog-wrapper .blog-description {
+  font-size: 2.5rem;
+  color: #999;
+}
+/* line 47, /Users/tedlopez/Documents/projects/tedspace/app/assets/stylesheets/blogs.scss */
+.blog-wrapper .sidebar-module {
+  padding: 1rem;
+}
+/* line 51, /Users/tedlopez/Documents/projects/tedspace/app/assets/stylesheets/blogs.scss */
+.blog-wrapper .sidebar-module-inset {
+  padding: 1rem;
+  background-color: #999;
+  border-radius: .25rem;
+}
+/* line 57, /Users/tedlopez/Documents/projects/tedspace/app/assets/stylesheets/blogs.scss */
+.blog-wrapper .sidebar-module-inset p:last-child,
+.blog-wrapper .sidebar-module-inset ul:last-child,
+.blog-wrapper .sidebar-module-inset ol:last-child {
+  margin-bottom: 0;
+}
+/* line 63, /Users/tedlopez/Documents/projects/tedspace/app/assets/stylesheets/blogs.scss */
+.blog-wrapper .blog-post {
+  margin-bottom: 4rem;
+}
+/* line 67, /Users/tedlopez/Documents/projects/tedspace/app/assets/stylesheets/blogs.scss */
+.blog-wrapper .blog-post-title {
+  margin-bottom: .25rem;
+  font-size: 2.5rem;
+  text-decoration: none;
+}
+/* line 73, /Users/tedlopez/Documents/projects/tedspace/app/assets/stylesheets/blogs.scss */
+.blog-wrapper .blog-post-title a {
+  text-decoration: none;
+}
+/* line 78, /Users/tedlopez/Documents/projects/tedspace/app/assets/stylesheets/blogs.scss */
+.blog-wrapper .blog-post-meta {
+  margin-bottom: 1.25rem;
+  color: #999;
+}
+/* line 83, /Users/tedlopez/Documents/projects/tedspace/app/assets/stylesheets/blogs.scss */
+.blog-wrapper .blog-col-1 {
+  float: left;
+  width: 60%;
+  margin-bottom: 5rem;
+}
+/* line 88, /Users/tedlopez/Documents/projects/tedspace/app/assets/stylesheets/blogs.scss */
+.blog-wrapper .blog-col-1 .blogcrumb {
+  background: transparent !important;
+}
+/* line 92, /Users/tedlopez/Documents/projects/tedspace/app/assets/stylesheets/blogs.scss */
+.blog-wrapper .blog-col-1 .blogcrumb a {
+  font-size: 1.25em;
+  margin: 0px 10px 0px 10px;
+}
+/* line 98, /Users/tedlopez/Documents/projects/tedspace/app/assets/stylesheets/blogs.scss */
+.blog-wrapper .blog-col-2 {
+  float: right;
+  width: 30%;
+}
+/* line 103, /Users/tedlopez/Documents/projects/tedspace/app/assets/stylesheets/blogs.scss */
+.blog-wrapper .social-links li {
+  display: inline;
+  padding-right: 10px;
+  font-size: 4rem;
+  text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+/* line 113, /Users/tedlopez/Documents/projects/tedspace/app/assets/stylesheets/blogs.scss */
+.blog-wrapper .social-links li a {
+  color: white;
+}
+
+/* line 120, /Users/tedlopez/Documents/projects/tedspace/app/assets/stylesheets/blogs.scss */
+.blog-sidebar-source {
+  margin-top: 20px;
+}
+
+/* line 124, /Users/tedlopez/Documents/projects/tedspace/app/assets/stylesheets/blogs.scss */
+.white-blog {
+  margin-top: 7rem;
+  background-color: white;
+  border-radius: 2px;
+  padding: 1rem;
+  color: black;
+  text-shadow: none;
+}
+/* line 132, /Users/tedlopez/Documents/projects/tedspace/app/assets/stylesheets/blogs.scss */
+.white-blog .breadcrumb {
+  padding: 8px 15px;
+  margin-bottom: 20px;
+  list-style: none;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+}
+/* line 139, /Users/tedlopez/Documents/projects/tedspace/app/assets/stylesheets/blogs.scss */
+.white-blog .breadcrumb a, .white-blog .breadcrumb a:focus, .white-blog .breadcrumb a:hover {
+  color: #777777;
+}
+
+@media (min-width: 40em) {
+  /* line 147, /Users/tedlopez/Documents/projects/tedspace/app/assets/stylesheets/blogs.scss */
+  .site-wrapper-inner {
+    vertical-align: middle;
+  }
+
+  /* line 151, /Users/tedlopez/Documents/projects/tedspace/app/assets/stylesheets/blogs.scss */
+  .blog-title {
+    font-size: 3.5rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  /* line 161, /Users/tedlopez/Documents/projects/tedspace/app/assets/stylesheets/blogs.scss */
+  .blog-wrapper {
+    width: 100%;
+    padding: 10px;
+  }
+  /* line 165, /Users/tedlopez/Documents/projects/tedspace/app/assets/stylesheets/blogs.scss */
+  .blog-wrapper .blog-description {
+    font-size: 2.5rem;
+    color: white;
+  }
+  /* line 170, /Users/tedlopez/Documents/projects/tedspace/app/assets/stylesheets/blogs.scss */
+  .blog-wrapper .blog-post-meta {
+    margin-bottom: 1.25rem;
+    color: white;
+  }
+
+  /* line 176, /Users/tedlopez/Documents/projects/tedspace/app/assets/stylesheets/blogs.scss */
+  .blog-wrapper .blog-col-1 {
+    width: 100%;
+    margin-bottom: 5rem;
+  }
+
+  /* line 181, /Users/tedlopez/Documents/projects/tedspace/app/assets/stylesheets/blogs.scss */
+  .blog-wrapper .blog-col-2 {
+    width: 75%;
+    margin: 0 auto;
+    float: none;
+  }
+  /* line 186, /Users/tedlopez/Documents/projects/tedspace/app/assets/stylesheets/blogs.scss */
+  .blog-wrapper .blog-col-2 img {
+    border-radius: 50%;
+  }
+  /* line 190, /Users/tedlopez/Documents/projects/tedspace/app/assets/stylesheets/blogs.scss */
+  .blog-wrapper .blog-col-2 .sidebar-module-inset {
+    padding: 1rem;
+    background-color: transparent;
+    border-radius: .25rem;
+  }
+}
