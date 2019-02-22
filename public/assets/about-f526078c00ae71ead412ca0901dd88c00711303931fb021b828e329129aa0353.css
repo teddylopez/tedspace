@@ -1,0 +1,166 @@
+/* line 1, /Users/tedlopez/Documents/projects/tedspace/app/assets/stylesheets/about.scss */
+.list-inline-item {
+  text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+/* line 10, /Users/tedlopez/Documents/projects/tedspace/app/assets/stylesheets/about.scss */
+.list-inline-item .fa-inverse:hover {
+  color: #c8102e;
+}
+
+/* line 15, /Users/tedlopez/Documents/projects/tedspace/app/assets/stylesheets/about.scss */
+.lax-wrap {
+  max-width: 100%;
+  margin: 0 auto;
+  font-size: 24px;
+  padding: 25px;
+}
+/* line 20, /Users/tedlopez/Documents/projects/tedspace/app/assets/stylesheets/about.scss */
+.lax-wrap li {
+  display: inline-block;
+}
+
+/* line 25, /Users/tedlopez/Documents/projects/tedspace/app/assets/stylesheets/about.scss */
+.lax-1 {
+  background: url("canyon.jpeg") no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 500px;
+}
+
+/* line 32, /Users/tedlopez/Documents/projects/tedspace/app/assets/stylesheets/about.scss */
+.lax-2 {
+  background: url("islands.jpeg") no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 500px;
+}
+
+/* line 39, /Users/tedlopez/Documents/projects/tedspace/app/assets/stylesheets/about.scss */
+.lax-3 {
+  background: url("yosemite.jpeg") no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 500px;
+}
+
+/* line 46, /Users/tedlopez/Documents/projects/tedspace/app/assets/stylesheets/about.scss */
+.lax-4 {
+  background: url("milkyway.jpeg") no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 500px;
+}
+
+/* line 53, /Users/tedlopez/Documents/projects/tedspace/app/assets/stylesheets/about.scss */
+.desc {
+  margin: 0 15%;
+}
+
+/* line 57, /Users/tedlopez/Documents/projects/tedspace/app/assets/stylesheets/about.scss */
+.align, .subhead {
+  text-align: left;
+}
+
+/* line 61, /Users/tedlopez/Documents/projects/tedspace/app/assets/stylesheets/about.scss */
+.about-me {
+  text-align: left;
+  padding-left: 10%;
+  padding-top: 10%;
+  padding-bottom: 22%;
+}
+/* line 67, /Users/tedlopez/Documents/projects/tedspace/app/assets/stylesheets/about.scss */
+.about-me .mailto {
+  color: #c8102e;
+}
+/* line 71, /Users/tedlopez/Documents/projects/tedspace/app/assets/stylesheets/about.scss */
+.about-me h1 {
+  font-size: 55px;
+  text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+/* line 81, /Users/tedlopez/Documents/projects/tedspace/app/assets/stylesheets/about.scss */
+.about-me a {
+  text-decoration: none;
+  color: #424652;
+}
+/* line 86, /Users/tedlopez/Documents/projects/tedspace/app/assets/stylesheets/about.scss */
+.about-me ul {
+  padding: 0;
+}
+
+/* line 91, /Users/tedlopez/Documents/projects/tedspace/app/assets/stylesheets/about.scss */
+.skills {
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+/* line 94, /Users/tedlopez/Documents/projects/tedspace/app/assets/stylesheets/about.scss */
+.skills p {
+  text-align: left;
+}
+
+/* line 101, /Users/tedlopez/Documents/projects/tedspace/app/assets/stylesheets/about.scss */
+.experience h1, .education h1, .interests h1, .skills h1 {
+  text-align: center;
+  text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+/* line 110, /Users/tedlopez/Documents/projects/tedspace/app/assets/stylesheets/about.scss */
+.experience p, .education p, .interests p, .skills p {
+  text-align: left;
+}
+
+/* line 115, /Users/tedlopez/Documents/projects/tedspace/app/assets/stylesheets/about.scss */
+.education {
+  text-align: left;
+}
+
+/* line 119, /Users/tedlopez/Documents/projects/tedspace/app/assets/stylesheets/about.scss */
+.interests {
+  margin-bottom: 8rem;
+}
+
+/* line 123, /Users/tedlopez/Documents/projects/tedspace/app/assets/stylesheets/about.scss */
+.icons {
+  margin-top: 2rem;
+  text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+/* line 131, /Users/tedlopez/Documents/projects/tedspace/app/assets/stylesheets/about.scss */
+.icons i {
+  font-size: 4rem;
+}
+
+/* line 136, /Users/tedlopez/Documents/projects/tedspace/app/assets/stylesheets/about.scss */
+.classes {
+  margin-bottom: 4rem;
+}
+/* line 139, /Users/tedlopez/Documents/projects/tedspace/app/assets/stylesheets/about.scss */
+.classes a {
+  color: #c8102e;
+}
+/* line 143, /Users/tedlopez/Documents/projects/tedspace/app/assets/stylesheets/about.scss */
+.classes p {
+  margin: 0;
+}
+
+@media only screen and (max-width: 600px) {
+  /* line 150, /Users/tedlopez/Documents/projects/tedspace/app/assets/stylesheets/about.scss */
+  .about-me {
+    padding: 0;
+  }
+  /* line 153, /Users/tedlopez/Documents/projects/tedspace/app/assets/stylesheets/about.scss */
+  .about-me ul {
+    padding: 0;
+  }
+  /* line 157, /Users/tedlopez/Documents/projects/tedspace/app/assets/stylesheets/about.scss */
+  .about-me .about-icons {
+    text-align: center;
+  }
+
+  /* line 162, /Users/tedlopez/Documents/projects/tedspace/app/assets/stylesheets/about.scss */
+  .lax-1, .lax-2, .lax-3, .lax-4 {
+    display: none;
+  }
+
+  /* line 167, /Users/tedlopez/Documents/projects/tedspace/app/assets/stylesheets/about.scss */
+  .skills .desc {
+    margin: 0;
+  }
+}
