@@ -95,9 +95,8 @@ GEM
     dotenv (2.6.0)
     dotenv-rails (2.6.0)
       dotenv (= 2.6.0)
-      railties (>= 3.2, < 6.0)
-    dynopoker (1.3.2)
       logger
+      railties (>= 3.2, < 6.0)
     equalizer (0.0.11)
     erubi (1.8.0)
     execjs (2.7.0)
@@ -296,7 +295,6 @@ DEPENDENCIES
   coffee-rails (~> 4.2)
   devise (~> 4.4, >= 4.4.3)
   dotenv-rails (~> 2.3)
-  dynopoker
   font-awesome-rails (~> 4.7, >= 4.7.0.4)
   friendly_id (~> 5.2, >= 5.2.3)
   gritter (~> 1.2)
