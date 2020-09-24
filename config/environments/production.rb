@@ -106,6 +106,7 @@ Rails.application.configure do
     config.address = 'http://wakemydyno.com'
     #  config.enable = false # default is true
     #  config.poke_frequency = 123 # default is 1800s (30min)
+     config.poke_frequency = 3600
   end
 
 end
