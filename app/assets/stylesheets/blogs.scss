@@ -48,6 +48,8 @@
     padding: 1rem;
 
     img {
+      padding: 2px;
+      border: 1px solid white;
       border-radius: 50%;
     }
   }
@@ -111,6 +113,10 @@
 
 .blog-sidebar-source {
   margin-top: 20px;
+
+  a {
+    color: #c8102e!important;
+  }
 }
 
 .white-blog {

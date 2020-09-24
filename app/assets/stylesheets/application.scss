@@ -10,6 +10,7 @@
 @import "portfolios";
 @import "nav";
 @import "custom-devise-forms";
+@import "animate";
 
 html,
 body {
@@ -117,7 +118,7 @@ a:hover {
 }
 
 .fa-bolt {
-  font-size: 2rem;
+  font-size: 4rem;
 }
 
 .masthead-brand {

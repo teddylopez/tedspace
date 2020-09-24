@@ -11,7 +11,7 @@ module ApplicationHelper
 
   def source_helper(styles)
     if session[:source]
-      greeting = "Thanks for visiting me from #{session[:source]}, please feel free to #{ link_to 'contact me', contact_path } if you'd like to work together."
+      greeting = "Thanks for visiting me from #{session[:source]}, please feel free to #{ link_to 'contact me', new_contact_path } if you'd like to work together."
       content_tag(:div, greeting.html_safe, class: styles)
     end
   end
@@ -93,7 +93,18 @@ module ApplicationHelper
       'https://s3.amazonaws.com/tedspace/videos/daredevildan.mp4',
       'https://s3.amazonaws.com/tedspace/videos/hendrix.mp4',
       'https://s3.amazonaws.com/tedspace/videos/austinpowers.mp4',
-      'https://s3.amazonaws.com/tedspace/videos/waynesworld.mp4'
+      'https://s3.amazonaws.com/tedspace/videos/waynesworld.mp4',
+      'https://s3.amazonaws.com/tedspace/videos/dynamite.mp4',
+      'https://s3.amazonaws.com/tedspace/videos/eaton.mp4',
+      'https://s3.amazonaws.com/tedspace/videos/howie-gs.mp4',
+      'https://s3.amazonaws.com/tedspace/videos/howie-hr.mp4',
+      'https://s3.amazonaws.com/tedspace/videos/juan-cole-2.mp4',
+      'https://s3.amazonaws.com/tedspace/videos/juan-verlander.mp4',
+      'https://s3.amazonaws.com/tedspace/videos/last-out.mp4',
+      'https://s3.amazonaws.com/tedspace/videos/scherzer-dodgers.mp4',
+      'https://s3.amazonaws.com/tedspace/videos/strasburg-dodgers.mp4',
+      'https://s3.amazonaws.com/tedspace/videos/wildcard.mp4',
+      'https://s3.amazonaws.com/tedspace/videos/zimm-soto.mp4'
     ].sample
   end
 

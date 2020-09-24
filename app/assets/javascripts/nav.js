@@ -5,8 +5,21 @@ $( document ).on('turbolinks:load', function() {
   });
 
   $('#nav-list').on('click', function(e) {
-    console.log(e)
-      $('#nav-list').attr("class","hidden");
+    $('#nav-list').attr("class","hidden");
   });
+
+});
+
+$(function() {
+
+  setInterval(function() {
+
+    var animationName = 'animated tada';
+    var animationend = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+
+    $('.fa-bolt').addClass(animationName).one(animationend, function() {
+      $(this).removeClass(animationName);
+    });
+  }, 5000);
 
 });

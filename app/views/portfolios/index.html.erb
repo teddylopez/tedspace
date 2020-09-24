@@ -2,8 +2,8 @@
 
 <div class="album text-muted">
   <h1>MY WORK</h1>
-  <div class="container">
-    <%= source_helper("alert alert-warning") %>
+  <div class="container animated bounceInUp">
+    <%= source_helper("alert alert-warning blog-sidebar-source") %>
     <div class="row <%= "sortable" if logged_in?(:site_admin) %>">
       <%= render partial: 'portfolio_item', collection: @portfolio_items %>
     </div>
