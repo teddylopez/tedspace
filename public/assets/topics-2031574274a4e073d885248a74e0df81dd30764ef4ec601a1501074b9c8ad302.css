@@ -1,0 +1,58 @@
+/* line 5, /Users/tedlopez/Documents/projects/tedspace/app/assets/stylesheets/topics.scss */
+.topic-wrapper {
+  margin: 7% 20%;
+  text-align: left;
+  margin-bottom: 8%;
+  text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+/* line 16, /Users/tedlopez/Documents/projects/tedspace/app/assets/stylesheets/topics.scss */
+.topic-wrapper h3 {
+  padding-left: 10px;
+}
+/* line 19, /Users/tedlopez/Documents/projects/tedspace/app/assets/stylesheets/topics.scss */
+.topic-wrapper h3 a {
+  text-decoration: none;
+}
+/* line 24, /Users/tedlopez/Documents/projects/tedspace/app/assets/stylesheets/topics.scss */
+.topic-wrapper .blogcrumb {
+  background-color: #333 !important;
+}
+/* line 28, /Users/tedlopez/Documents/projects/tedspace/app/assets/stylesheets/topics.scss */
+.topic-wrapper .blogcrumb a {
+  font-size: 1.25em;
+  margin: 0px 10px 0px 10px;
+}
+
+/* line 34, /Users/tedlopez/Documents/projects/tedspace/app/assets/stylesheets/topics.scss */
+.topic-btn {
+  background-color: #424652;
+  color: white;
+  border-radius: 3px;
+  padding: .5rem 1rem;
+  margin-right: 1rem;
+}
+
+/* line 42, /Users/tedlopez/Documents/projects/tedspace/app/assets/stylesheets/topics.scss */
+.topic-btn:hover {
+  background-color: #4285F4;
+  color: white;
+  text-decoration: none;
+}
+
+/* line 48, /Users/tedlopez/Documents/projects/tedspace/app/assets/stylesheets/topics.scss */
+.topic-div {
+  margin: 2rem auto;
+}
+
+@media only screen and (max-width: 600px) {
+  /* line 53, /Users/tedlopez/Documents/projects/tedspace/app/assets/stylesheets/topics.scss */
+  .topic-wrapper {
+    margin: 0;
+    padding: 10px;
+  }
+
+  /* line 58, /Users/tedlopez/Documents/projects/tedspace/app/assets/stylesheets/topics.scss */
+  .blog-wrapper {
+    margin: 0 !important;
+  }
+}

@@ -1,0 +1,49 @@
+/* line 1, /Users/tedlopez/Documents/projects/tedspace/app/assets/stylesheets/custom-devise-forms.scss */
+.register-form {
+  margin: 0 30%;
+}
+/* line 4, /Users/tedlopez/Documents/projects/tedspace/app/assets/stylesheets/custom-devise-forms.scss */
+.register-form h2 {
+  text-align: center;
+}
+/* line 8, /Users/tedlopez/Documents/projects/tedspace/app/assets/stylesheets/custom-devise-forms.scss */
+.register-form .login-card {
+  padding: .75rem;
+  margin-bottom: 2rem;
+  border: 0;
+  text-align: left;
+}
+/* line 15, /Users/tedlopez/Documents/projects/tedspace/app/assets/stylesheets/custom-devise-forms.scss */
+.register-form input {
+  margin-bottom: 2rem;
+  color: black;
+}
+/* line 21, /Users/tedlopez/Documents/projects/tedspace/app/assets/stylesheets/custom-devise-forms.scss */
+.register-form .auth-links a {
+  color: #fff;
+}
+
+@media only screen and (max-width: 600px) {
+  /* line 28, /Users/tedlopez/Documents/projects/tedspace/app/assets/stylesheets/custom-devise-forms.scss */
+  .register-form {
+    margin: 0 10%;
+  }
+
+  /* line 32, /Users/tedlopez/Documents/projects/tedspace/app/assets/stylesheets/custom-devise-forms.scss */
+  .login > .card {
+    width: 100% !important;
+    margin: 0 auto;
+    float: none;
+  }
+
+  /* line 38, /Users/tedlopez/Documents/projects/tedspace/app/assets/stylesheets/custom-devise-forms.scss */
+  input {
+    margin-bottom: 2rem;
+    color: black;
+  }
+
+  /* line 44, /Users/tedlopez/Documents/projects/tedspace/app/assets/stylesheets/custom-devise-forms.scss */
+  .auth-links a {
+    color: #fff;
+  }
+}

@@ -36,6 +36,7 @@ gem 'coderay', '~> 1.1', '>= 1.1.1'
 gem 'mail_form', '~> 1.7', '>= 1.7.1'
 gem 'rails_12factor', group: :production
 gem 'dynopoker'
+gem "animate-rails"
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]

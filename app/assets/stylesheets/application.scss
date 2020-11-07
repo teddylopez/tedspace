@@ -10,6 +10,7 @@
 @import "portfolios";
 @import "nav";
 @import "custom-devise-forms";
+@import "animate";
 
 html,
 body {
@@ -97,6 +98,7 @@ body {
   height: 100%;
 
   .cover-heading {
+    display: none;
     position: relative;
     margin: 15% auto;
 
@@ -116,7 +118,7 @@ a:hover {
 }
 
 .fa-bolt {
-  font-size: 2rem;
+  font-size: 4rem;
 }
 
 .masthead-brand {
@@ -338,6 +340,11 @@ a:hover {
     background: -webkit-linear-gradient(left, #F2C94C, #F2994A);
     background: -o-linear-gradient(left, #F2C94C, #F2994A);
     background: linear-gradient(to right, #F2C94C, #F2994A);  /* Chrome 10-25, Safari 5.1-6 */ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    .cover-heading {
+      display: inline;
+      top: 24%;
+    }
   }
 
   .video {
