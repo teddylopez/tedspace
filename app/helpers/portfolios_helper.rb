@@ -14,4 +14,8 @@ module PortfoliosHelper
     end
   end
 
+  def standardize_title(portfolio)
+    return "#{portfolio.split(" ").join("").downcase}"
+  end
+
 end
