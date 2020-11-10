@@ -5,7 +5,7 @@
     <div class="col-md-7">
         <a href="<%= @portfolio_item.url %>" target=_blank>
           <div class="animated bounceInDown">
-            <%= image_tag("portfolio/#{standardize_title(@portfolio_item.title)}.png", width: '100%') %>
+            <%= image_tag portfolio_img(@portfolio_item.main_image, 'main'), width: '100%' %>
           </div>
         </a>
     </div>

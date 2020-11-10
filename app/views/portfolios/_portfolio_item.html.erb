@@ -1,6 +1,6 @@
 <div class="card" data-id="<%= portfolio_item.id %>">
   <%= link_to portfolio_show_path(portfolio_item) do %>
-    <%= image_tag("portfolio/#{standardize_title(portfolio_item.title)}.png", width: '100%') %>
+    <%= image_tag portfolio_img(portfolio_item.thumb_image, 'thumb'), width: '100%' %>
     <%= portfolio_item.title %>
   <% end %>
   <p class="card-text">
