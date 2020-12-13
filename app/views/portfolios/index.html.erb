@@ -4,7 +4,7 @@
   <h1>MY WORK</h1>
   <div class="container animated bounceInUp">
     <%= source_helper("alert alert-warning blog-sidebar-source") %>
-    <div class="row <%= "sortable" if logged_in?(:site_admin) %>">
+    <div class="row">
       <%= render partial: 'portfolio_item', collection: @portfolio_items %>
     </div>
   </div>

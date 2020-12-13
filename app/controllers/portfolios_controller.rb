@@ -3,7 +3,8 @@ class PortfoliosController < ApplicationController
   access all: [:show, :index, :react], user: {except: [:destroy, :new, :create, :update, :edit, :sort]}, site_admin: :all
 
   def index
-    @portfolio_items = Portfolio.by_position
+    # @portfolio_items = Portfolio.by_position
+    @portfolio_items = Portfolio.all
   end
 
   def sort
