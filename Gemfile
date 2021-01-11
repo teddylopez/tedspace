@@ -31,7 +31,7 @@ gem 'dotenv-rails', '~> 2.3'
 gem 'cocoon', '~> 1.2', '>= 1.2.11'
 gem 'gritter', '~> 1.2'
 gem 'twitter', '~> 6.2'
-gem 'redcarpet', '~> 3.4'
+gem 'redcarpet', '~> 3.5'
 gem 'coderay', '~> 1.1', '>= 1.1.1'
 gem 'mail_form', '~> 1.7', '>= 1.7.1'
 gem 'rails_12factor', group: :production
